@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppCollectionViewHeaderOrEmpty.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppCollectionViewHeaderOrEmpty"
+    x:DataType="local:ViewModel">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <HorizontalStackLayout
+            Grid.Row="0"
+            Padding="20"
+            HorizontalOptions="Center"
+            Spacing="20">
+            <Button Command="{Binding AddCommand}" Text="Add item" />
+            <Button Command="{Binding RemoveCommand}" Text="Remove item" />
+        </HorizontalStackLayout>
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding ItemList}">
+
+            <CollectionView.Header>
+                <Label
+                    Padding="10"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Text="Cities" />
+            </CollectionView.Header>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Padding="20,5,5,5" Text="{Binding .}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <Label Padding="20,5,5,5" Text="Empty" />
+            </CollectionView.EmptyView>
+
+            <CollectionView.Footer>
+                <Label
+                    Padding="10"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Text="Hello world !!!" />
+            </CollectionView.Footer>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>
