@@ -13,3 +13,8 @@ Migration from Xamarin.Forms to DotNet Maui
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | Open | [MauiAppIconStretched](MauiAppIconStretched) |
 | Unable to load font 'monospace' | dotnet/maui/issues/11422 | Low | Open | [MauiAppFontMonospace](MauiAppFontMonospace) |
 
+Severity:
+- critical: must be resolved immediately, as it renders the app unusable until it is resolved.
+- high: must be resolved at the earliest, as there is no workaround.
+- medium: can be fixed in the normal course of development and testing.
+- low:  can be fixed at a later date (more serious bugs take priority).
