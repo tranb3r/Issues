@@ -16,6 +16,6 @@ Migration from Xamarin.Forms to DotNet Maui
 
 Severity:
 - critical: must be resolved immediately, as it renders the app unusable until it is resolved.
-- high: must be resolved at the earliest, as there is no workaround.
+- high: must be resolved at the earliest, as it degrades user experience and there is no workaround.
 - medium: can be fixed in the normal course of development and testing.
 - low:  can be fixed at a later date (more serious bugs take priority).
