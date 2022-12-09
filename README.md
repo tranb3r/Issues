@@ -12,6 +12,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | Open | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | Open | [MauiAppIconStretched](MauiAppIconStretched) |
 | Unable to load font 'monospace' | dotnet/maui/issues/11422 | Low | Open | [MauiAppFontMonospace](MauiAppFontMonospace) |
+| SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | Open | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
 
 Severity:
 - critical: must be resolved immediately, as it renders the app unusable until it is resolved.

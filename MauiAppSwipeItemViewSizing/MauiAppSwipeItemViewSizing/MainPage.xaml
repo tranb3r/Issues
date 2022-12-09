@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppSwipeItemViewSizing.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <VerticalStackLayout VerticalOptions="Center">
+
+        <SwipeView>
+
+            <SwipeView.LeftItems>
+                <SwipeItems>
+
+                    <SwipeItemView>
+                        <Frame
+                            Padding="5"
+                            BorderColor="Black"
+                            HasShadow="False"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center">
+                            <Label Text="GO" />
+                        </Frame>
+                    </SwipeItemView>
+
+                </SwipeItems>
+            </SwipeView.LeftItems>
+
+            <Grid
+                Margin="30"
+                BackgroundColor="LightGray"
+                HeightRequest="60">
+                <Label
+                    HorizontalOptions="Center"
+                    Text="Swipe right"
+                    VerticalOptions="Center" />
+            </Grid>
+        </SwipeView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
