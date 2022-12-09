@@ -8,64 +8,48 @@
         <VerticalStackLayout VerticalOptions="Center">
 
             <Frame
-                Margin="30,0"
+                Margin="20"
                 Padding="0"
-                BackgroundColor="Blue"
-                CornerRadius="20"
+                BorderColor="Black"
+                CornerRadius="0"
                 HasShadow="False">
                 <Frame
-                    Margin="30"
+                    Margin="20,0"
                     Padding="0"
-                    BackgroundColor="White"
-                    CornerRadius="0"
+                    BackgroundColor="Blue"
+                    CornerRadius="20"
                     HasShadow="False">
-                    <Label
-                        Padding="40"
-                        HorizontalOptions="Center"
-                        Text="Frame" />
+                    <Frame
+                        Margin="30"
+                        Padding="0"
+                        BackgroundColor="White"
+                        CornerRadius="0"
+                        HasShadow="False">
+                        <Label
+                            Padding="40"
+                            HorizontalOptions="Center"
+                            Text="Frame" />
+                    </Frame>
                 </Frame>
             </Frame>
 
             <Frame
-                Margin="30,0"
+                Margin="20"
                 Padding="0"
-                BackgroundColor="Red"
-                CornerRadius="20"
+                BorderColor="Black"
+                CornerRadius="0"
                 HasShadow="False">
-                <Frame
-                    Margin="30"
-                    Padding="0"
-                    BackgroundColor="White"
-                    CornerRadius="0"
-                    HasShadow="False">
+                <Border
+                    Margin="20,0"
+                    Stroke="Blue"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    StrokeThickness="30">
                     <Label
                         Padding="40"
                         HorizontalOptions="Center"
-                        Text="Frame" />
-                </Frame>
+                        Text="Border" />
+                </Border>
             </Frame>
-
-            <Border
-                Margin="30,0"
-                Stroke="Blue"
-                StrokeShape="RoundRectangle 20,20,20,20"
-                StrokeThickness="30">
-                <Label
-                    Padding="40"
-                    HorizontalOptions="Center"
-                    Text="Border" />
-            </Border>
-
-            <Border
-                Margin="30,0"
-                Stroke="Red"
-                StrokeShape="RoundRectangle 20,20,20,20"
-                StrokeThickness="30">
-                <Label
-                    Padding="40"
-                    HorizontalOptions="Center"
-                    Text="Border" />
-            </Border>
 
         </VerticalStackLayout>
     </ScrollView>
