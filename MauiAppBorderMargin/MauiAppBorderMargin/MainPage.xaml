@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppBorderMargin.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center">
+
+            <Frame
+                Margin="30,0"
+                Padding="0"
+                BackgroundColor="Blue"
+                CornerRadius="20"
+                HasShadow="False">
+                <Frame
+                    Margin="30"
+                    Padding="0"
+                    BackgroundColor="White"
+                    CornerRadius="0"
+                    HasShadow="False">
+                    <Label
+                        Padding="40"
+                        HorizontalOptions="Center"
+                        Text="Frame" />
+                </Frame>
+            </Frame>
+
+            <Frame
+                Margin="30,0"
+                Padding="0"
+                BackgroundColor="Red"
+                CornerRadius="20"
+                HasShadow="False">
+                <Frame
+                    Margin="30"
+                    Padding="0"
+                    BackgroundColor="White"
+                    CornerRadius="0"
+                    HasShadow="False">
+                    <Label
+                        Padding="40"
+                        HorizontalOptions="Center"
+                        Text="Frame" />
+                </Frame>
+            </Frame>
+
+            <Border
+                Margin="30,0"
+                Stroke="Blue"
+                StrokeShape="RoundRectangle 20,20,20,20"
+                StrokeThickness="30">
+                <Label
+                    Padding="40"
+                    HorizontalOptions="Center"
+                    Text="Border" />
+            </Border>
+
+            <Border
+                Margin="30,0"
+                Stroke="Red"
+                StrokeShape="RoundRectangle 20,20,20,20"
+                StrokeThickness="30">
+                <Label
+                    Padding="40"
+                    HorizontalOptions="Center"
+                    Text="Border" />
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
