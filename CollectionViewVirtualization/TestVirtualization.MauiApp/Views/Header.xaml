@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HorizontalStackLayout 
+    Spacing="6" 
+    Margin="10"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:TestVirtualization.MauiApp.ViewModels"
+             xmlns:models="clr-namespace:TestVirtualization.MauiApp.Models"
+             x:Class="TestVirtualization.MauiApp.Views.Header" 
+             x:DataType="viewModels:IViewModel">
+
+    <Button Command="{Binding AddCommand, Mode=OneTime}" Text="Add" />
+
+    <Label Text="{Binding View1Count, Source={x:Static models:Counters.Instance}, StringFormat='View1:{0}', Mode=OneWay}" VerticalOptions="Center" />
+
+    <Label Text="{Binding View2Count, Source={x:Static models:Counters.Instance}, StringFormat='View2:{0}', Mode=OneWay}" VerticalOptions="Center" />
+
+</HorizontalStackLayout>

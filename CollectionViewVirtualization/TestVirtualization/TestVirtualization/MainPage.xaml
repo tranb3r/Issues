@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="TestVirtualization.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pages="clr-namespace:TestVirtualization.Pages;assembly=TestVirtualization"
+    android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <pages:ListViewPage />
+    <pages:CollectionViewPage />
+    <pages:ListViewGroupPage />
+    <pages:CollectionViewGroupPage />
+
+</TabbedPage>

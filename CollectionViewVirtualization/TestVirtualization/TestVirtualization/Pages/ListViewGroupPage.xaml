@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestVirtualization.Pages.ListViewGroupPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:TestVirtualization.ViewModels;assembly=TestVirtualization"
+    xmlns:views="clr-namespace:TestVirtualization.Views;assembly=TestVirtualization"
+    Title="List_Group"
+    x:DataType="viewModels:ViewModelGroups">
+
+    <StackLayout>
+
+        <views:Header />
+
+        <ListView
+            CachingStrategy="RecycleElement"
+            GroupHeaderTemplate="{StaticResource ListView1Template}"
+            HasUnevenRows="True"
+            IsGroupingEnabled="True"
+            ItemTemplate="{StaticResource ListView2Template}"
+            ItemsSource="{Binding ItemList, Mode=OneTime}"
+            SelectionMode="None"
+            VerticalScrollBarVisibility="Never"
+            SeparatorVisibility="None" />
+
+    </StackLayout>
+
+</ContentPage>

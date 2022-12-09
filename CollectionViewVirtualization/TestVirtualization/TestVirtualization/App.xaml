@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="TestVirtualization.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TestVirtualization.Views;assembly=TestVirtualization">
+
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <DataTemplate x:Key="ListView1Template">
+                <ViewCell>
+                    <views:View1 />
+                </ViewCell>
+            </DataTemplate>
+
+            <DataTemplate x:Key="ListView2Template">
+                <ViewCell>
+                    <views:View2 />
+                </ViewCell>
+            </DataTemplate>
+
+            <DataTemplate x:Key="CollectionView1Template">
+                <ContentView>
+                    <views:View1 />
+                </ContentView>
+            </DataTemplate>
+
+            <DataTemplate x:Key="CollectionView2Template">
+                <ContentView>
+                    <views:View2 />
+                </ContentView>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

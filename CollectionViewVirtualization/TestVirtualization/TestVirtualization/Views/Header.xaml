@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout Orientation="Horizontal" xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:TestVirtualization.Models;assembly=TestVirtualization"
+             xmlns:viewModels="clr-namespace:TestVirtualization.ViewModels;assembly=TestVirtualization"
+             x:Class="TestVirtualization.Views.Header" 
+             x:DataType="viewModels:IViewModel">
+
+    <Button Command="{Binding AddCommand, Mode=OneTime}" Text="Add" />
+
+    <Label Text="{Binding View1Count, Source={x:Static models:Counters.Instance}, StringFormat='View1:{0}', Mode=OneWay}" VerticalOptions="Center" />
+
+    <Label Text="{Binding View2Count, Source={x:Static models:Counters.Instance}, StringFormat='View2:{0}', Mode=OneWay}" VerticalOptions="Center" />
+
+</StackLayout>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="TestVirtualization.MauiApp.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TestVirtualization.MauiApp.Views">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary>
+
+                    <DataTemplate x:Key="ListView1Template">
+                        <ViewCell>
+                            <views:View1 />
+                        </ViewCell>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="ListView2Template">
+                        <ViewCell>
+                            <views:View2 />
+                        </ViewCell>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="CollectionView1Template">
+                        <views:View1 />
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="CollectionView2Template">
+                        <views:View2 />
+                    </DataTemplate>
+
+                </ResourceDictionary>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
