@@ -10,3 +10,4 @@ Migration from Xamarin.Forms to DotNet Maui
 | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | Open |
 | [MauiAppIconStretched](MauiAppIconStretched) | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | Open |
 | [CollectionViewVirtualization](CollectionViewVirtualization) | CollectionView virtualization does not work when using a DataTemplateSelector | dotnet/maui/issues/11272 <br /> https://github.com/xamarin/Xamarin.Forms/issues/13045 | Medium | Open
+| | Random crash | xamarin/xamarin-android/issues/7335 | High | Open |
