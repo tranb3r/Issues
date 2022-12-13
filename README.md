@@ -13,6 +13,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Unable to load font 'monospace' | dotnet/maui/issues/11422 | Low | Open | [MauiAppFontMonospace](MauiAppFontMonospace) |
 | SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | Open | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
 | Java.Lang.IllegalStateException when pushing modal page on app resume | dotnet/maui/issues/11259 <br /> dotnet/maui/issues/11501 | Low | Open | [MauiAppExceptionOnResume](MauiAppExceptionOnResume) |
+| Fody warning assembly has already been processed | Fody/Fody/issues/1023 | Low | Open | [MauiAppFodyAlreadyProcessed](MauiAppFodyAlreadyProcessed) |
 
 Severity:
 - critical: must be resolved immediately, as it renders the app unusable until it is resolved.
