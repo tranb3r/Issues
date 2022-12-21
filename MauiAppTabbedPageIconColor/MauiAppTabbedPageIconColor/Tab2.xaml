@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppTabbedPageIconColor.Tab2"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Tab2">
+
+    <ContentPage.IconImageSource>
+        <FontImageSource
+            FontFamily="OpenSansRegular"
+            Glyph="&#x03A6;"
+            Size="15" />
+    </ContentPage.IconImageSource>
+
+    <VerticalStackLayout VerticalOptions="Center">
+
+        <Label HorizontalOptions="Center" Text="Tab 2" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
