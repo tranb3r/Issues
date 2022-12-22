@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppSfTextInputLayout.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,10">
+
+            <Label Text="Password visibility toggle does not work for numeric keyboard." />
+
+            <sf:SfTextInputLayout EnablePasswordVisibilityToggle="True">
+                <Entry
+                    IsPassword="True"
+                    Keyboard="Numeric"
+                    Text="13456" />
+            </sf:SfTextInputLayout>
+
+            <BoxView
+                Margin="0,0,0,20"
+                HeightRequest="2"
+                WidthRequest="500"
+                Color="Black" />
+
+            <Label Text="ErrorText works on page load, but it disappears when entry text is modified." />
+
+            <sf:SfTextInputLayout ErrorText="Error message" HasError="True">
+                <Entry Text="Hello world !" />
+            </sf:SfTextInputLayout>
+
+            <BoxView
+                Margin="0,20,0,20"
+                HeightRequest="2"
+                WidthRequest="500"
+                Color="Black" />
+
+            <Label Text="Hint appears over text when you set/unset focus in the entry ; but if you edit the text, then it works." />
+
+            <sf:SfTextInputLayout Hint="User name">
+                <Entry Text="John Smith" />
+            </sf:SfTextInputLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
