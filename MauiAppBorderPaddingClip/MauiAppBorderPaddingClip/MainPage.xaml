@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppBorderPaddingClip.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <VerticalStackLayout VerticalOptions="Center">
+
+        <Border
+            Margin="20,0"
+            Padding="20"
+            Stroke="Blue"
+            StrokeShape="RoundRectangle 20,20,20,20"
+            StrokeThickness="1">
+
+            <ContentView BackgroundColor="LightBlue">
+
+                <Label
+                    Padding="20"
+                    HorizontalOptions="Center"
+                    Text="Hello Maui !" />
+
+            </ContentView>
+
+        </Border>
+
+    </VerticalStackLayout>
+
+</ContentPage>
