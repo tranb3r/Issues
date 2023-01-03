@@ -17,6 +17,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | UseLocalNotification is not defined for net7.0 TFM | thudugala/Plugin.LocalNotification/issues/343 | Low | Open | [MauiAppLocalNotificationLib](MauiAppLocalNotificationLib) |
 | (Un)SelectedTabColor do not work for TabbedPage icons (FontImageSource) on iOS | dotnet/maui/issues/12250 <br /> dotnet/maui/issues/6043 <br /> dotnet/maui/issues/6718 <br /> xamarin/Xamarin.Forms/issues/8556 | Low | Open | [MauiAppTabbedPageIconColor](MauiAppTabbedPageIconColor) |
 | SfTextInputLayout maui issues | https://support.syncfusion.com/support/tickets/426462 <br /> dotnet/maui/issues/12332 | Low | Open | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
+| Border content clipping issue on iOS | dotnet/maui/issues/12398 | Low | Open | [MauiAppBorderPaddingClip](MauiAppBorderPaddingClip) |
 
 Severity:
 - critical: must be resolved immediately, as it renders the app unusable until it is resolved.
