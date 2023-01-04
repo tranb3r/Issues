@@ -18,7 +18,24 @@
                 <Label
                     Padding="20"
                     HorizontalOptions="Center"
-                    Text="Hello Maui !" />
+                    Text="using Border Padding" />
+
+            </ContentView>
+
+        </Border>
+
+        <Border
+            Margin="20,20"
+            Stroke="Blue"
+            StrokeShape="RoundRectangle 20,20,20,20"
+            StrokeThickness="1">
+
+            <ContentView Margin="20" BackgroundColor="LightBlue">
+
+                <Label
+                    Padding="20"
+                    HorizontalOptions="Center"
+                    Text="using Content Margin" />
 
             </ContentView>
 
