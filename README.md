@@ -19,6 +19,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | SfTextInputLayout maui issues | https://support.syncfusion.com/support/tickets/426462 <br /> dotnet/maui/issues/12332 | Low | Open | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
 | Border content clipping issue on iOS | dotnet/maui/issues/12398 | Low | Open | [MauiAppBorderPaddingClip](MauiAppBorderPaddingClip) |
 | Carsousel view position is not correct on iOS | dotnet/maui/issues/12425 | Low | Open | [MauiAppCarouselView](MauiAppCarouselView) |
+| CollectionView Items display issue when Header is resized on iOS | dotnet/maui/issues/12429 | Low | Open | [MauiAppCollectionViewHeaderResize](MauiAppCollectionViewHeaderResize) |
 
 Severity:
 - critical: must be resolved immediately, as it renders the app unusable until it is resolved.
