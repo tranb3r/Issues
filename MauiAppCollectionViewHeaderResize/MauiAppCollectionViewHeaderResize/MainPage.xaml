@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppCollectionViewHeaderResize.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppCollectionViewHeaderResize"
+    x:DataType="local:ViewModel">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <Button
+            Grid.Row="0"
+            Command="{Binding AddCommand}"
+            HorizontalOptions="Center"
+            Text="Add" />
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding ItemList}">
+
+            <CollectionView.Header>
+                <VerticalStackLayout>
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding ItemListHeader, Source={RelativeSource AncestorType={x:Type local:ViewModel}}}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Label Padding="10" Text="{Binding .}" />
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                    <BoxView
+                        Margin="0,5"
+                        HeightRequest="2"
+                        Color="Black" />
+                </VerticalStackLayout>
+            </CollectionView.Header>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Padding="10" Text="{Binding .}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>
