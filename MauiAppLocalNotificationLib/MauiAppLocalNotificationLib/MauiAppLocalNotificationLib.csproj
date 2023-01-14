@@ -26,5 +26,9 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
 	</ItemGroup>
+	 
+	<ItemGroup>
+		<PackageReference Include="Plugin.LocalNotification" Version="10.0.3" />
+	</ItemGroup>
 
 </Project>
