@@ -11,10 +11,10 @@ Migration from Xamarin.Forms to DotNet Maui
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | Open | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | Open | [MauiAppIconStretched](MauiAppIconStretched) |
 | Unable to load font 'monospace' | dotnet/maui/issues/11422 | Low | Open | [MauiAppFontMonospace](MauiAppFontMonospace) |
-| SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | Open | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
+| SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | Fixed | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
 | Java.Lang.IllegalStateException when pushing modal page on app resume | dotnet/maui/issues/11259 <br /> dotnet/maui/issues/11501 | Low | Open | [MauiAppExceptionOnResume](MauiAppExceptionOnResume) |
 | Fody warning assembly has already been processed | Fody/Fody/issues/1023 | Low | Open | [MauiAppFodyAlreadyProcessed](MauiAppFodyAlreadyProcessed) |
-| UseLocalNotification is not defined for net7.0 TFM | thudugala/Plugin.LocalNotification/issues/343 | Low | Closed | [MauiAppLocalNotificationLib](MauiAppLocalNotificationLib) |
+| UseLocalNotification is not defined for net7.0 TFM | thudugala/Plugin.LocalNotification/issues/343 | Low | Fixed | [MauiAppLocalNotificationLib](MauiAppLocalNotificationLib) |
 | (Un)SelectedTabColor do not work for TabbedPage icons (FontImageSource) on iOS | dotnet/maui/issues/12250 <br /> dotnet/maui/issues/6043 <br /> dotnet/maui/issues/6718 <br /> xamarin/Xamarin.Forms/issues/8556 | Low | Open | [MauiAppTabbedPageIconColor](MauiAppTabbedPageIconColor) |
 | SfTextInputLayout maui issues | https://support.syncfusion.com/support/tickets/426462 <br /> dotnet/maui/issues/12332 | Low | Open | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
 | Border content clipping issue on iOS | dotnet/maui/issues/12398 | Low | Open | [MauiAppBorderPaddingClip](MauiAppBorderPaddingClip) |
