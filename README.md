@@ -14,7 +14,6 @@ Migration from Xamarin.Forms to DotNet Maui
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | [MauiAppIconStretched](MauiAppIconStretched) |
 | Unable to load font 'monospace' | dotnet/maui/issues/11422 | Low | [MauiAppFontMonospace](MauiAppFontMonospace) |
 | Java.Lang.IllegalStateException when pushing modal page on app resume | dotnet/maui/issues/11259 <br /> dotnet/maui/issues/11501 | Low | [MauiAppExceptionOnResume](MauiAppExceptionOnResume) |
-| Fody warning assembly has already been processed | Fody/Fody/issues/1023 | Low | [MauiAppFodyAlreadyProcessed](MauiAppFodyAlreadyProcessed) |
 | (Un)SelectedTabColor do not work for TabbedPage icons (FontImageSource) on iOS | dotnet/maui/issues/12250 <br /> dotnet/maui/issues/6043 <br /> dotnet/maui/issues/6718 <br /> xamarin/Xamarin.Forms/issues/8556 | Low | [MauiAppTabbedPageIconColor](MauiAppTabbedPageIconColor) |
 | IsPassword cannot be set dynamically for numeric keyboard | dotnet/maui/issues/12332 | Low | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
 | Border content clipping issue on iOS | dotnet/maui/issues/12398 | Low | [MauiAppBorderPaddingClip](MauiAppBorderPaddingClip) |
@@ -29,6 +28,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
 | UseLocalNotification is not defined for net7.0 TFM | thudugala/Plugin.LocalNotification/issues/343 | Low | [MauiAppLocalNotificationLib](MauiAppLocalNotificationLib) |
 | SfTextInputLayout maui issues | https://support.syncfusion.com/support/tickets/426462 | Low | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
+| Fody warning assembly has already been processed | Fody/Fody/issues/1023 | Low | [MauiAppFodyAlreadyProcessed](MauiAppFodyAlreadyProcessed) |
 
 ### Severity
 
