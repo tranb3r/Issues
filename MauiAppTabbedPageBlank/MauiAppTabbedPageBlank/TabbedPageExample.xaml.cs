@@ -35,10 +35,17 @@ public partial class TabbedPageExample : TabbedPage
             IconImageSource = "dotnet_bot.svg"
         };
 
+        var testPageNav = new NavigationPage(new MainPage())
+        {
+            Title = "Page 5",
+            IconImageSource = "dotnet_bot.svg"
+        };
+
         Children.Add(dashboardNav);
         Children.Add(discoverNav);
         Children.Add(myDecksNav);
         Children.Add(settingsNav);
+        Children.Add(testPageNav);
 
         InitializeComponent();
 	}

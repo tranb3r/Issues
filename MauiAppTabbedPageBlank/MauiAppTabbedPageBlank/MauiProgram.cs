@@ -1,4 +1,6 @@
-﻿namespace MauiAppTabbedPageBlank;
+﻿using ShanedlerSamples;
+
+namespace MauiAppTabbedPageBlank;
 
 public static class MauiProgram
 {
@@ -6,7 +8,8 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
-			.UseMauiApp<App>();
+			.UseMauiApp<App>()
+            .ConfigureTabbedPageWorkarounds();
 
 		return builder.Build();
 	}
