@@ -2,7 +2,8 @@
 <ContentPage
     x:Class="MauiAppBorderMargin.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mauiAppBorderMargin="clr-namespace:MauiAppBorderMargin">
 
     <ScrollView>
         <VerticalStackLayout VerticalOptions="Center">
@@ -42,13 +43,39 @@
                 <Border
                     Margin="20,0"
                     Stroke="Blue"
-                    StrokeShape="RoundRectangle 20,20,20,20"
+                    StrokeShape="RoundRectangle 0,20,10,0"
                     StrokeThickness="30">
                     <Label
                         Padding="40"
                         HorizontalOptions="Center"
                         Text="Border" />
                 </Border>
+            </Frame>
+
+            <Frame
+                Margin="20"
+                Padding="0"
+                BorderColor="Black"
+                CornerRadius="0"
+                HasShadow="False">
+                <mauiAppBorderMargin:CustomFrame
+                    Margin="20,0"
+                    Padding="0"
+                    BackgroundColor="Blue"
+                    CornerRadii="0,20,10,0"
+                    HasShadow="False">
+                    <Frame
+                        Margin="30"
+                        Padding="0"
+                        BackgroundColor="White"
+                        CornerRadius="0"
+                        HasShadow="False">
+                        <Label
+                            Padding="40"
+                            HorizontalOptions="Center"
+                            Text="CustomFrame" />
+                    </Frame>
+                </mauiAppBorderMargin:CustomFrame>
             </Frame>
 
         </VerticalStackLayout>
