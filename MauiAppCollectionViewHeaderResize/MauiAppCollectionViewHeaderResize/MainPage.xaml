@@ -8,13 +8,21 @@
 
     <Grid RowDefinitions="Auto,*">
 
-        <Button
-            Grid.Row="0"
-            Command="{Binding AddCommand}"
-            HorizontalOptions="Center"
-            Text="Add" />
+        <HorizontalStackLayout Grid.Row="0">
+            <Button
+                Command="{Binding AddCommand}"
+                HorizontalOptions="Center"
+                Text="Add" />
+            <Button
+                Clicked="Button_OnClicked"
+                HorizontalOptions="Center"
+                Text="Fix" />
+        </HorizontalStackLayout>
 
-        <CollectionView Grid.Row="1" ItemsSource="{Binding ItemList}">
+        <CollectionView
+            x:Name="CollectionViewRef"
+            Grid.Row="1"
+            ItemsSource="{Binding ItemList}">
 
             <CollectionView.Header>
                 <VerticalStackLayout>
