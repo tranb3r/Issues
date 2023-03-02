@@ -6,13 +6,13 @@ namespace SldcTrimmer
     {
         static void Main(string[] args)
         {
-            const string filterStr = "Alpha == 255";
-            Console.WriteLine(filterStr);
-
-            var filter = filterStr.ParseLambda<Color, bool>();
-
             try
             {
+                const string filterStr = "Alpha == 255";
+                Console.WriteLine(filterStr);
+
+                var filter = filterStr.ParseLambda<Color, bool>();
+
                 var color1 = new Color { Alpha = 255 };
                 var value1 = filter(color1);
                 Console.WriteLine($"{color1.Alpha} -> {value1}");
@@ -23,10 +23,10 @@ namespace SldcTrimmer
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.GetType());
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
             }
-
-            Console.ReadLine();
         }
     }
 }
