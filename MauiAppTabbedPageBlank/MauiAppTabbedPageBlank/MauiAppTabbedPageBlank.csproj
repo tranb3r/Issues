@@ -24,8 +24,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!-- Images -->
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+		<PackageReference Include="PureWeen.Maui.FixesAndWorkarounds" Version="1.2.5" />
 	</ItemGroup>
 
 </Project>
