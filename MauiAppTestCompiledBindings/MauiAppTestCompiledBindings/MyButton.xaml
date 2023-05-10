@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Button
+    x:Class="MauiAppTestCompiledBindings.MyButton"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppTestCompiledBindings"
+    xmlns:mauiGestures="clr-namespace:MauiGestures;assembly=MauiGestures"
+    mauiGestures:Gesture.LongPressCommand="{x:Bind ClickCommand}"
+    x:DataType="local:MainViewModel"
+    Text="Click me" />
