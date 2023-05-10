@@ -18,7 +18,8 @@ Migration from Xamarin.Forms to DotNet Maui
 | Carsousel view position is not correct on iOS | dotnet/maui/issues/12425 | Low | [MauiAppCarouselView](MauiAppCarouselView) |
 | CollectionView Items display issue when Header is resized on iOS | dotnet/maui/issues/12429 | Low | [MauiAppCollectionViewHeaderResize](MauiAppCollectionViewHeaderResize) |
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
-| System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer)
+| System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
+| Build error when using x:Bind with MauiGesture | levitali/CompiledBindings/issues/27 | Low | [MauiAppTestCompiledBindings](MauiAppTestCompiledBindings) |
 
 ### Fixed issues
 
