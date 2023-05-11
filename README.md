@@ -19,7 +19,6 @@ Migration from Xamarin.Forms to DotNet Maui
 | CollectionView Items display issue when Header is resized on iOS | dotnet/maui/issues/12429 | Low | [MauiAppCollectionViewHeaderResize](MauiAppCollectionViewHeaderResize) |
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
 | System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
-| Build error when using x:Bind with MauiGesture | levitali/CompiledBindings/issues/27 | Low | [MauiAppTestCompiledBindings](MauiAppTestCompiledBindings) |
 
 ### Fixed issues
 
@@ -31,6 +30,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | UseLocalNotification is not defined for net7.0 TFM | thudugala/Plugin.LocalNotification/issues/343 | Low | [MauiAppLocalNotificationLib](MauiAppLocalNotificationLib) |
 | SfTextInputLayout maui issues | https://support.syncfusion.com/support/tickets/426462 | Low | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
 | Fody warning assembly has already been processed | Fody/Fody/issues/1023 | Low | [MauiAppFodyAlreadyProcessed](MauiAppFodyAlreadyProcessed) |
+| Build error when using x:Bind with MauiGesture | levitali/CompiledBindings/issues/27 | Low | [MauiAppTestCompiledBindings](MauiAppTestCompiledBindings) |
 
 ### Severity
 
