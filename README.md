@@ -6,6 +6,7 @@ Migration from Xamarin.Forms to DotNet Maui
 
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
+| UI freeze with net8-pre5 | | Critical | [MauiSamplePluginFingerprint](MauiSamplePluginFingerprint) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | CollectionView virtualization does not work when using a DataTemplateSelector | dotnet/maui/issues/11272 <br /> https://github.com/xamarin/Xamarin.Forms/issues/13045 | Medium | [CollectionViewVirtualization](CollectionViewVirtualization) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
