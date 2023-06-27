@@ -20,6 +20,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | CollectionView Items display issue when Header is resized on iOS | dotnet/maui/issues/12429 | Low | [MauiAppCollectionViewHeaderResize](MauiAppCollectionViewHeaderResize) |
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
 | System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
+| Entry not working when keyboard is numeric and os language is not english (net8-pre5) | https://github.com/dotnet/maui/issues/15884 | Low | [MauiAppKeyboardNumeric](MauiAppKeyboardNumeric) |
 
 ### Fixed issues
 
