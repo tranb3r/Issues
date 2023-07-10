@@ -1,0 +1,46 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <UsingTask TaskName="Babel" AssemblyFile="C:\Program Files\Babel\MSBuild\Babel.Build.dll" />
+
+	<Target Name="Obfuscate" AfterTargets="ILLink" BeforeTargets="ComputeFilesToPublish">
+
+		<ItemGroup>
+			<PrimaryFile Include="@(ResolvedFileToPublish)" Condition="'%(Filename)' == '$(AssemblyName)'" />
+			<MergeAssemblies Include="@(ResolvedFileToPublish)" Condition="'%(Filename)' == 'ClassLibrary1'" />
+		</ItemGroup>
+
+		<Babel Framework="portable" InputFile="@(PrimaryFile)" OutputFile="@(PrimaryFile)" MergeAssemblies="@(MergeAssemblies)"
+		       VerboseLevel="0" ShowStatistics="true" GenerateMapOutFile="true"
+		       Internalize="true" FlattenNamespaces="true" SealClasses="true"
+		       EnableObfuscationAgent="true" ObfuscateTypes="true" ObfuscateEvents="true" ObfuscateFields="true" ObfuscateMethods="true" ObfuscateParameters="true" ObfuscateProperties="true" VirtualFunctions="true"
+			   UnicodeNormalization="_,m" StringEncryption="false" />
+
+		<ItemGroup>
+			<ResolvedFileToPublish Remove="@(MergeAssemblies)" />
+		</ItemGroup>
+
+	</Target>
+	
+	<-- Begin workaround for files not removed after merge -->
+	
+	<Target Name="DeleteFilesAfterMerge" AfterTargets="Obfuscate">
+		<ItemGroup>
+			<FilesToDelete Include="@(MergeAssemblies)"/>
+			<FilesToDelete Include="@(MergeAssemblies->'%(RelativeDir)fr\%(Filename).resources.dll')"/>
+        </ItemGroup>
+		<Message Text="Delete merged files: '@(FilesToDelete)'" Importance="high" />
+		<Delete Files="@(FilesToDelete)" TreatErrorsAsWarnings="true" >
+			<Output TaskParameter="DeletedFiles" ItemName="DeletedList"/>
+		</Delete>
+		<Message Text="Deleted files: '@(DeletedList)'" Importance="high" />
+	</Target>
+
+	<Target Name="FixAppResourcesPathsAfterMerge" AfterTargets="_ResolveAssemblies" BeforeTargets="_ResolveSatellitePaths" >
+		<ItemGroup>
+			<ReferenceSatellitePaths Remove="@(ReferenceSatellitePaths)" Condition="'%(Filename)' == 'ClassLibrary1.resources'" />
+			<ReferenceSatellitePaths Include="@(ResolvedFileToPublish->'%(RelativeDir)fr\%(Filename).resources.dll')" Condition="'%(Filename)' == 'MauiAppBabel10MergeResources'" />
+		</ItemGroup>
+	</Target>
+
+	<-- End workaround for files not removed after merge -->
+
+</Project>
