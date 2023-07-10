@@ -18,6 +18,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
 | System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
 | Entry not working when keyboard is numeric and os language is not english (net8-pre5) | https://github.com/dotnet/maui/issues/15884 | Low | [MauiAppKeyboardNumeric](MauiAppKeyboardNumeric) |
+| Issue with Babel 10.x and merging of resources assemblies | | Low | [MauiAppBabel10MergeResources](MauiAppBabel10MergeResources) |
 
 ### Fixed issues
 
