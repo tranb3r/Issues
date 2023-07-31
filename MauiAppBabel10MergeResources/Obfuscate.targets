@@ -20,7 +20,7 @@
 
 	</Target>
 	
-	<-- Begin workaround for files not removed after merge -->
+	<!-- Begin workaround for files not removed after merge -->
 	
 	<Target Name="DeleteFilesAfterMerge" AfterTargets="Obfuscate">
 		<ItemGroup>
@@ -41,6 +41,6 @@
 		</ItemGroup>
 	</Target>
 
-	<-- End workaround for files not removed after merge -->
+	<!-- End workaround for files not removed after merge -->
 
 </Project>
