@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33808.371
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppDontKeepActivities", "MauiAppDontKeepActivities\MauiAppDontKeepActivities.csproj", "{37B63586-E765-441A-8C01-32F8D0DACBCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37B63586-E765-441A-8C01-32F8D0DACBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B63586-E765-441A-8C01-32F8D0DACBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B63586-E765-441A-8C01-32F8D0DACBCD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{37B63586-E765-441A-8C01-32F8D0DACBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B63586-E765-441A-8C01-32F8D0DACBCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25ECAD5E-0FCB-46FF-8FCE-259B27C3F4CC}
+	EndGlobalSection
+EndGlobal
