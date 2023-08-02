@@ -7,6 +7,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
 | UI freeze with net8-pre5 | smstuebe/xamarin-fingerprint/issues/237 | Critical | [MauiSamplePluginFingerprint](MauiSamplePluginFingerprint) |
+| App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | [MauiAppIconStretched](MauiAppIconStretched) |
