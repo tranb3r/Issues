@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppTestSwipeView.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <VerticalStackLayout VerticalOptions="Center">
+
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems Mode="Execute">
+                    <SwipeItem
+                        BackgroundColor="LightBlue"
+                        Command="{Binding ExecuteCommand}"
+                        Text="GO" />
+                </SwipeItems>
+            </SwipeView.LeftItems>
+            <Frame>
+                <Label Text="Hello world" />
+            </Frame>
+        </SwipeView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
