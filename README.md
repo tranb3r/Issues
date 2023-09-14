@@ -6,6 +6,7 @@ Migration from Xamarin.Forms to DotNet Maui
 
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
+| SwipeView Execute mode does not work | https://github.com/dotnet/maui/issues/17371 | Critical | [MauiAppTestSwipeView](MauiAppTestSwipeView) |
 | UI freeze with net8-pre5 | smstuebe/xamarin-fingerprint/issues/237 | Critical | [MauiSamplePluginFingerprint](MauiSamplePluginFingerprint) |
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
