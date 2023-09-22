@@ -5,80 +5,97 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:mauiAppBorderMargin="clr-namespace:MauiAppBorderMargin">
 
-    <ScrollView>
-        <VerticalStackLayout VerticalOptions="Center">
+    <Grid
+        BackgroundColor="Red"
+        ColumnDefinitions="5,Auto,5"
+        HorizontalOptions="Center"
+        RowDefinitions="5,Auto,5,Auto,5,Auto,5"
+        VerticalOptions="Center">
 
+        <Frame
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="Blue"
+            CornerRadius="20"
+            HasShadow="False">
             <Frame
-                Margin="20"
+                Margin="30"
                 Padding="0"
-                BorderColor="Black"
+                BackgroundColor="White"
                 CornerRadius="0"
                 HasShadow="False">
-                <Frame
-                    Margin="20,0"
-                    Padding="0"
-                    BackgroundColor="Blue"
-                    CornerRadius="20"
-                    HasShadow="False">
-                    <Frame
-                        Margin="30"
-                        Padding="0"
-                        BackgroundColor="White"
-                        CornerRadius="0"
-                        HasShadow="False">
-                        <Label
-                            Padding="40"
-                            HorizontalOptions="Center"
-                            Text="Frame" />
-                    </Frame>
-                </Frame>
+                <Label
+                    Padding="40"
+                    HorizontalOptions="Center"
+                    Text="Frame" />
             </Frame>
+        </Frame>
 
+        <Border
+            Grid.Row="3"
+            Grid.Column="1"
+            BackgroundColor="White"
+            Stroke="Blue"
+            StrokeShape="RoundRectangle 0,20,10,0"
+            StrokeThickness="30">
+            <Label
+                Padding="40"
+                HorizontalOptions="Center"
+                Text="Border" />
+        </Border>
+
+        <mauiAppBorderMargin:CustomFrame
+            Grid.Row="5"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="Blue"
+            CornerRadii="0,20,10,0"
+            HasShadow="False">
             <Frame
-                Margin="20"
+                Margin="30"
                 Padding="0"
-                BorderColor="Black"
+                BackgroundColor="White"
                 CornerRadius="0"
                 HasShadow="False">
-                <Border
-                    Margin="20,0"
-                    Stroke="Blue"
-                    StrokeShape="RoundRectangle 0,20,10,0"
-                    StrokeThickness="30">
-                    <Label
-                        Padding="40"
-                        HorizontalOptions="Center"
-                        Text="Border" />
-                </Border>
+                <Label
+                    Padding="40"
+                    HorizontalOptions="Center"
+                    Text="CustomFrame" />
             </Frame>
+        </mauiAppBorderMargin:CustomFrame>
 
-            <Frame
-                Margin="20"
-                Padding="0"
-                BorderColor="Black"
-                CornerRadius="0"
-                HasShadow="False">
-                <mauiAppBorderMargin:CustomFrame
-                    Margin="20,0"
-                    Padding="0"
-                    BackgroundColor="Blue"
-                    CornerRadii="0,20,10,0"
-                    HasShadow="False">
-                    <Frame
-                        Margin="30"
-                        Padding="0"
-                        BackgroundColor="White"
-                        CornerRadius="0"
-                        HasShadow="False">
-                        <Label
-                            Padding="40"
-                            HorizontalOptions="Center"
-                            Text="CustomFrame" />
-                    </Frame>
-                </mauiAppBorderMargin:CustomFrame>
-            </Frame>
+        <ContentView
+            Grid.Row="0"
+            Grid.RowSpan="7"
+            Grid.Column="0"
+            BackgroundColor="Black" />
+        <ContentView
+            Grid.Row="0"
+            Grid.RowSpan="7"
+            Grid.Column="2"
+            BackgroundColor="Black" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+        <ContentView
+            Grid.Row="0"
+            Grid.Column="1"
+            BackgroundColor="Black" />
+
+        <ContentView
+            Grid.Row="2"
+            Grid.Column="1"
+            BackgroundColor="Black" />
+
+        <ContentView
+            Grid.Row="4"
+            Grid.Column="1"
+            BackgroundColor="Black" />
+
+        <ContentView
+            Grid.Row="6"
+            Grid.Column="1"
+            BackgroundColor="Black" />
+
+    </Grid>
 
 </ContentPage>
