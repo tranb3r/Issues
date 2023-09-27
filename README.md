@@ -10,6 +10,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
+| Memory leak when scrolling a CollectionView with IsGrouped=true | dotnet/maui/issues/17698 | Medium | [MauiAppCollectionViewGroupingLeak](MauiAppCollectionViewGroupingLeak) |
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | [MauiAppIconStretched](MauiAppIconStretched) |
 | Java.Lang.IllegalStateException when pushing modal page on app resume | dotnet/maui/issues/11259 <br /> dotnet/maui/issues/11501 | Low | [MauiAppExceptionOnResume](MauiAppExceptionOnResume) |
 | (Un)SelectedTabColor do not work for TabbedPage icons (FontImageSource) on iOS | dotnet/maui/issues/12250 <br /> dotnet/maui/issues/6043 <br /> dotnet/maui/issues/6718 <br /> xamarin/Xamarin.Forms/issues/8556 | Low | [MauiAppTabbedPageIconColor](MauiAppTabbedPageIconColor) |
