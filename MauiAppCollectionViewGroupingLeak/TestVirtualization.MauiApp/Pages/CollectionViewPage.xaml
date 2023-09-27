@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestVirtualization.MauiApp.Pages.CollectionViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dataTemplateSelectors="clr-namespace:TestVirtualization.MauiApp.DataTemplateSelectors;assembly=TestVirtualization.MauiApp"
+    xmlns:viewModels="clr-namespace:TestVirtualization.MauiApp.ViewModels;assembly=TestVirtualization.MauiApp"
+    xmlns:views="clr-namespace:TestVirtualization.MauiApp.Views"
+    Title="Collection"
+    x:DataType="viewModels:ViewModel">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <dataTemplateSelectors:ItemDataTemplateSelector
+                x:Key="CollectionDataTemplateSelector"
+                View1Template="{StaticResource CollectionView1Template}"
+                View2Template="{StaticResource CollectionView2Template}" />
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,*">
+
+        <views:Header Grid.Row="0" />
+
+        <CollectionView
+            Grid.Row="1"
+            ItemTemplate="{StaticResource CollectionDataTemplateSelector}"
+            ItemsSource="{Binding ItemList, Mode=OneTime}" />
+
+    </Grid>
+
+</ContentPage>
