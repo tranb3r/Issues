@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestVirtualization.MauiApp.Pages.Page2"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mauiApp="clr-namespace:TestVirtualization.MauiApp"
+    Title="Page2"
+    x:DataType="mauiApp:ViewModel">
+
+    <CarouselView ItemsSource="{Binding Items}">
+        <CarouselView.ItemTemplate>
+            <DataTemplate x:DataType="mauiApp:Model">
+                <Label Margin="10" Text="{Binding Name}" />
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+</ContentPage>
