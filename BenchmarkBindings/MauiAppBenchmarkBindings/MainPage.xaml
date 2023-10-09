@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppBenchmarkBindings.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <HorizontalStackLayout Spacing="10">
+
+            <Button
+                x:Name="ButtonRun1"
+                Clicked="OnButton1Clicked"
+                HorizontalOptions="Start"
+                Text="Test1" />
+
+            <Button
+                x:Name="ButtonRun2"
+                Clicked="OnButton2Clicked"
+                HorizontalOptions="Start"
+                Text="Test2" />
+
+            <Label
+                x:Name="LabelStatus"
+                IsVisible="false"
+                Text="Running..."
+                VerticalOptions="Center" />
+
+        </HorizontalStackLayout>
+
+        <Label x:Name="LabelResultXaml" />
+
+        <Label x:Name="LabelResultXamlCompiledBindings" />
+
+        <Label x:Name="LabelResultCSharp" />
+
+        <Label x:Name="LabelResultCSharpTypedBindings" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
