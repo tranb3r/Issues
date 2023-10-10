@@ -30,7 +30,12 @@
 		<RunAOTCompilation>false</RunAOTCompilation>
 	</PropertyGroup>
 
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<AndroidEnvironment Include="Platforms\Android\environment.txt" />
+	</ItemGroup>
+
 	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet" Version="0.13.9" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 	</ItemGroup>
 

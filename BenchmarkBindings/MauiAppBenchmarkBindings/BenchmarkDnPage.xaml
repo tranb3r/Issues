@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppBenchmarkBindings.BenchmarkDnPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="BenchmarkDotNet">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <HorizontalStackLayout Spacing="10">
+
+            <Button
+                x:Name="ButtonRun1"
+                Clicked="OnButton1Clicked"
+                HorizontalOptions="Start"
+                Text="Create View" />
+
+            <Button
+                x:Name="ButtonRun2"
+                Clicked="OnButton2Clicked"
+                HorizontalOptions="Start"
+                Text="Update ViewModel" />
+
+        </HorizontalStackLayout>
+
+        <ActivityIndicator x:Name="Indicator" Color="DarkGray" />
+
+        <ScrollView Orientation="Horizontal">
+            <Label
+                x:Name="LabelSummary"
+                FontFamily="monospace"
+                FontSize="10" />
+        </ScrollView>
+
+    </VerticalStackLayout>
+
+</ContentPage>

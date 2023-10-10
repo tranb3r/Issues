@@ -1,23 +1,24 @@
 ﻿using System;
 using ClassLibrary1;
 using System.Diagnostics;
+using Microsoft.Maui.Controls;
 
 namespace MauiAppBenchmarkBindings
 {
-    internal class Benchmark2 : BenchmarkBase
+    internal class BenchmarkSw : BenchmarkSwBase
     {
-        protected override long Run(Action<MyViewModel> action)
+        protected override long Run(Func<MyViewModel, View> action)
         {
             var vm = new MyViewModel
             {
                 Title = "Hello world"
             };
-            action(vm);
             var i = 0L;
             var sw = Stopwatch.StartNew();
             while (sw.ElapsedMilliseconds < N)
             {
-                vm.Title = $"Hello user {i++}";
+                _ = action(vm);
+                ++i;
             }
             return i;
         }
