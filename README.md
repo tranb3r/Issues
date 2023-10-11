@@ -6,7 +6,6 @@ Migration from Xamarin.Forms to DotNet Maui
 
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
-| SwipeView Execute mode does not work | https://github.com/dotnet/maui/issues/17371 | Critical | [MauiAppTestSwipeView](MauiAppTestSwipeView) |
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
@@ -26,6 +25,7 @@ Migration from Xamarin.Forms to DotNet Maui
 
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
+| SwipeView Execute mode does not work | https://github.com/dotnet/maui/issues/17371 | Critical | [MauiAppTestSwipeView](MauiAppTestSwipeView) |
 | TabbedPage content becomes blank after navigating tabs | dotnet/maui/issues/7558 <br /> dotnet/maui/issues/9743 | Critical | [MauiAppTabbedPageBlank](MauiAppTabbedPageBlank) |
 | UI freeze with net8-pre5 | smstuebe/xamarin-fingerprint/issues/237 | Critical | [MauiSamplePluginFingerprint](MauiSamplePluginFingerprint) |
 | Random crash | xamarin/xamarin-android/issues/7335 | High | |
