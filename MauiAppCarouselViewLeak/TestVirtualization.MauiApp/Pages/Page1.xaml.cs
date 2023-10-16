@@ -4,9 +4,13 @@ namespace TestVirtualization.MauiApp.Pages;
 
 public partial class Page1
 {
-	public Page1()
+    ~Page1() => Console.WriteLine("~Page1");
+
+    public Page1()
 	{
-		GC.Collect();
+        Console.WriteLine("new Page1()");
+
+        GC.Collect();
 
 		InitializeComponent();
 
