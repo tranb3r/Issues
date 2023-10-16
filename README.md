@@ -6,6 +6,7 @@ Migration from Xamarin.Forms to DotNet Maui
 
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
+| Snackbar InvalidOperationException when using dotnet trimmer | CommunityToolkit/Maui/issues/1460 | Low | [MauiAppSnackbar](MauiAppSnackbar) |
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
