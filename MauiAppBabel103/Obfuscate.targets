@@ -1,0 +1,36 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask TaskName="Babel" AssemblyFile="C:\Program Files\Babel\MSBuild\Babel.Build.dll" />
+
+	<Target Name="Obfuscate" AfterTargets="ILLink" BeforeTargets="ComputeFilesToPublish">
+
+		<ItemGroup>
+			<PrimaryFile Include="@(ResolvedFileToPublish)" Condition="'%(Filename)' == '$(AssemblyName)'" />
+			<MergeAssemblies Include="@(ResolvedFileToPublish)" Condition="'%(Filename)' == 'ClassLibrary1' or '%(Filename)' == 'ClassLibrary2'" />
+		</ItemGroup>
+
+		<Babel Framework="portable" InputFile="@(PrimaryFile)" OutputFile="@(PrimaryFile)" MergeAssemblies="@(MergeAssemblies)"
+		       VerboseLevel="1" ShowStatistics="true" GenerateMapOutFile="true" SearchSatelliteAssemblies="true"
+		       Internalize="true"
+		       VirtualFunctions="true"
+		       UnicodeNormalization="_,m"
+		       StringEncryption="false"
+		/>
+
+		<ItemGroup>
+			<ResolvedFileToPublish Remove="@(MergeAssemblies)" />
+		</ItemGroup>
+
+	</Target>
+
+	<Target Name="DeleteFilesAfterMerge" AfterTargets="Obfuscate">
+		<ItemGroup>
+			<FilesToDelete Include="@(MergeAssemblies)"/>
+		</ItemGroup>
+		<Message Text="Delete merged files: '@(FilesToDelete)'" Importance="high" />
+		<Delete Files="@(FilesToDelete)" TreatErrorsAsWarnings="true" >
+			<Output TaskParameter="DeletedFiles" ItemName="DeletedList"/>
+		</Delete>
+		<Message Text="Deleted files: '@(DeletedList)'" Importance="high" />
+	</Target>
+
+</Project>
