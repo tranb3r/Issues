@@ -21,7 +21,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
 | System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
 | Issue with Babel 10.3 and ObservableProperty | | Low | [MauiAppBabel103](MauiAppBabel103) |
-| flurl.http trimmer issue in 4.0.0-pre5 | | Low | [MauiAppFlurlHttpTrimmerIssue](MauiAppFlurlHttpTrimmerIssue) |
+| flurl.http trimmer issue in 4.0.0-pre5 | tmenier/Flurl/issues/772 | Low | [MauiAppFlurlHttpTrimmerIssue](MauiAppFlurlHttpTrimmerIssue) |
 
 ### Fixed issues
 
