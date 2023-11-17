@@ -10,9 +10,9 @@
         VerticalOptions="Center">
 
         <Button
-            Clicked="OnCounterClicked"
+            Clicked="OnFinishClicked"
             HorizontalOptions="Center"
-            Text="Click me" />
+            Text="Finish" />
 
     </VerticalStackLayout>
 

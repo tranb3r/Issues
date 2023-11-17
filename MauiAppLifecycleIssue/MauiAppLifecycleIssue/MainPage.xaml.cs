@@ -7,7 +7,7 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnFinishClicked(object sender, EventArgs e)
         {
             Console.WriteLine("Finish activity");
 
