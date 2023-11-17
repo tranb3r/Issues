@@ -6,8 +6,6 @@ Migration from Xamarin.Forms to DotNet Maui
 
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
-| Firestore, exception when updating AndroidX to latest version | TobiasBuchholz/Plugin.Firebase/issues/222 | Medium | [MauiAppFirestoreExtensionAndroidxCollection](MauiAppFirestoreExtensionAndroidxCollection) |
-| Snackbar InvalidOperationException when using dotnet trimmer | CommunityToolkit/Maui/issues/1460 | Low | [MauiAppSnackbar](MauiAppSnackbar) |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | Memory leak when scrolling a CollectionView with IsGrouped=true | dotnet/maui/issues/17698 | Medium | [MauiAppCollectionViewGroupingLeak](MauiAppCollectionViewGroupingLeak) |
@@ -42,6 +40,8 @@ Migration from Xamarin.Forms to DotNet Maui
 | Issue with Babel 10.x and merging of resources assemblies | | Low | [MauiAppBabel10MergeResources](MauiAppBabel10MergeResources) |
 | flurl.http trimmer issue in 4.0.0-pre5 | tmenier/Flurl/issues/772 | Low | [MauiAppFlurlHttpTrimmerIssue](MauiAppFlurlHttpTrimmerIssue) |
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
+| Firestore, exception when updating AndroidX to latest version | TobiasBuchholz/Plugin.Firebase/issues/222 | Medium | [MauiAppFirestoreExtensionAndroidxCollection](MauiAppFirestoreExtensionAndroidxCollection) |
+| Snackbar InvalidOperationException when using dotnet trimmer | CommunityToolkit/Maui/issues/1460 | Low | [MauiAppSnackbar](MauiAppSnackbar) |
 
 ### Severity
 
