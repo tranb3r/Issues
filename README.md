@@ -19,6 +19,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
 | System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
 | Issue with Babel 10.3 and ObservableProperty | | Low | [MauiAppBabel103](MauiAppBabel103) |
+| Maui application does not restart properly after android activity is destroyed | dotnet/maui/issues/18845 | Low | [MauiAppLifecycleIssue](MauiAppLifecycleIssue) |
 
 ### Fixed issues
 
