@@ -8,9 +8,9 @@ internal interface m_
 {
 	// Token: 0x17000001 RID: 1
 	// (get) Token: 0x06000010 RID: 16
-	int Count { get; }
+	int __ { get; }
 
 	// Token: 0x17000002 RID: 2
 	// (get) Token: 0x06000011 RID: 17
-	IRelayCommand ClickCommand { get; }
+	IRelayCommand _m { get; }
 }

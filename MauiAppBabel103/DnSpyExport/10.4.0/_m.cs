@@ -9,13 +9,13 @@ using System.Runtime.CompilerServices;
 [GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator", "8.2.0.0")]
 [DebuggerNonUserCode]
 [ExcludeFromCodeCoverage]
-[EditorBrowsable(EditorBrowsableState.Never)]
+[EditorBrowsable(1)]
 [Obsolete("This type is not intended to be used directly by user code")]
 internal static class _m
 {
 	// Token: 0x04000002 RID: 2
 	[Nullable(1)]
-	[EditorBrowsable(EditorBrowsableState.Never)]
+	[EditorBrowsable(1)]
 	[Obsolete("This field is not intended to be referenced directly by user code")]
-	public static readonly PropertyChangedEventArgs _ = new PropertyChangedEventArgs("Count");
+	public static readonly PropertyChangedEventArgs _ = new PropertyChangedEventArgs("__");
 }

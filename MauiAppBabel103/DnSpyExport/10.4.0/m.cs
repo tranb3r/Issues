@@ -30,30 +30,30 @@ internal class m : ContentPage
 		VerticalStackLayout verticalStackLayout = new VerticalStackLayout();
 		NameScope nameScope = NameScope.GetNameScope(this) ?? new NameScope();
 		NameScope.SetNameScope(this, nameScope);
-		verticalStackLayout.SetValue(Layout.PaddingProperty, new Thickness(30.0, 0.0));
+		verticalStackLayout.SetValue(Microsoft.Maui.Controls.Layout.PaddingProperty, new Thickness(30.0, 0.0));
 		verticalStackLayout.SetValue(StackBase.SpacingProperty, 25.0);
 		verticalStackLayout.SetValue(View.VerticalOptionsProperty, LayoutOptions.Center);
-		bindingExtension.Mode = 2;
+		bindingExtension.Mode = BindingMode.OneWay;
 		bindingExtension.Path = "ClickCommand";
 		bindingExtension.TypedBinding = new TypedBinding<m_, IRelayCommand>(new Func<m_, ValueTuple<IRelayCommand, bool>>(global::m.m), null, new Tuple<Func<m_, object>, string>[]
 		{
 			new Tuple<Func<m_, object>, string>(new Func<m_, object>(global::m.__), "ClickCommand")
 		});
-		BindingBase bindingBase = bindingExtension.ProvideValue(null);
+		BindingBase bindingBase = ((IMarkupExtension<BindingBase>)bindingExtension).ProvideValue(null);
 		button.SetBinding(Button.CommandProperty, bindingBase);
 		button.SetValue(View.HorizontalOptionsProperty, LayoutOptions.Center);
 		button.SetValue(Button.TextProperty, "Click me");
 		verticalStackLayout.Children.Add(button);
-		label.SetValue(Label.FontAttributesProperty, 1);
+		label.SetValue(Label.FontAttributesProperty, FontAttributes.Bold);
 		label.SetValue(Label.FontSizeProperty, 24.0);
 		label.SetValue(View.HorizontalOptionsProperty, LayoutOptions.Center);
-		bindingExtension2.Mode = 2;
+		bindingExtension2.Mode = BindingMode.OneWay;
 		bindingExtension2.Path = "Count";
 		bindingExtension2.TypedBinding = new TypedBinding<m_, int>(new Func<m_, ValueTuple<int, bool>>(global::m._m), null, new Tuple<Func<m_, object>, string>[]
 		{
 			new Tuple<Func<m_, object>, string>(new Func<m_, object>(global::m.m_), "Count")
 		});
-		BindingBase bindingBase2 = bindingExtension2.ProvideValue(null);
+		BindingBase bindingBase2 = ((IMarkupExtension<BindingBase>)bindingExtension2).ProvideValue(null);
 		label.SetBinding(Label.TextProperty, bindingBase2);
 		verticalStackLayout.Children.Add(label);
 		this.SetValue(ContentPage.ContentProperty, verticalStackLayout);
@@ -65,7 +65,7 @@ internal class m : ContentPage
 	{
 		if (_ != null)
 		{
-			return new ValueTuple<IRelayCommand, bool>(_.ClickCommand, true);
+			return new ValueTuple<IRelayCommand, bool>(_._m, true);
 		}
 		return default(ValueTuple<IRelayCommand, bool>);
 	}
@@ -83,7 +83,7 @@ internal class m : ContentPage
 	{
 		if (_ != null)
 		{
-			return new ValueTuple<int, bool>(_.Count, true);
+			return new ValueTuple<int, bool>(_.__, true);
 		}
 		return default(ValueTuple<int, bool>);
 	}

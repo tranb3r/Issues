@@ -13,8 +13,8 @@ internal class mm : ObservableObject, m_
 	[RelayCommand]
 	private void _()
 	{
-		int count = this.Count;
-		this.Count = count + 1;
+		int num = this.__;
+		this.__ = num + 1;
 	}
 
 	// Token: 0x17000003 RID: 3
@@ -22,7 +22,7 @@ internal class mm : ObservableObject, m_
 	// (set) Token: 0x06000014 RID: 20 RVA: 0x00002391 File Offset: 0x00000591
 	[GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator", "8.2.0.0")]
 	[ExcludeFromCodeCoverage]
-	public int Count
+	public int __
 	{
 		get
 		{
@@ -32,9 +32,9 @@ internal class mm : ObservableObject, m_
 		{
 			if (!EqualityComparer<int>.Default.Equals(this._, value))
 			{
-				this.OnPropertyChanging(__._);
+				this.OnPropertyChanging(global::__._);
 				this._ = value;
-				this.OnPropertyChanged(_m._);
+				this.OnPropertyChanged(global::_m._);
 			}
 		}
 	}
@@ -44,7 +44,7 @@ internal class mm : ObservableObject, m_
 	[Nullable(1)]
 	[GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.2.0.0")]
 	[ExcludeFromCodeCoverage]
-	public IRelayCommand ClickCommand
+	public IRelayCommand _m
 	{
 		[NullableContext(1)]
 		get
