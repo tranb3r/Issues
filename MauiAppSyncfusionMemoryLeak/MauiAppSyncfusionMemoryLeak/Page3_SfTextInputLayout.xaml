@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppSyncfusionMemoryLeak.Page3_SfTextInputLayout"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:core="http://schemas.syncfusion.com/maui"
+    Title="SfTextInputLayout">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <Label Text="SfTextInputLayout: leak" />
+
+        <core:SfTextInputLayout>
+            <Entry />
+        </core:SfTextInputLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>

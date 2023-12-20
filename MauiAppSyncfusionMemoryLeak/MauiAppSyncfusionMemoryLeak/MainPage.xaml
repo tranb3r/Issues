@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppSyncfusionMemoryLeak.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MainPage">
+
+    <VerticalStackLayout
+        Padding="10"
+        HorizontalOptions="Start"
+        Spacing="10">
+
+        <Label x:Name="MemoryLabelRef" />
+
+        <Button Clicked="Button_Default_OnClicked" Text="Default" />
+
+        <Button Clicked="Button_SfProgressBar_OnClicked" Text="SfProgressBar" />
+
+        <Button Clicked="Button_SfTextInputLayout_OnClicked" Text="SfTextInputLayout" />
+
+        <Button Clicked="Button_SfEffectsView_OnClicked" Text="SfEffectsView" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
