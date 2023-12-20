@@ -18,7 +18,6 @@ Migration from Xamarin.Forms to DotNet Maui
 | CollectionView Items display issue when Header is resized on iOS | dotnet/maui/issues/12429 | Low | [MauiAppCollectionViewHeaderResize](MauiAppCollectionViewHeaderResize) |
 | SwipeView animation is not fluid when combined with LongPress gesture on iOS | vapolia/MauiGestures/issues/2 | Low | [MauiAppSwipeViewAnimation](MauiAppSwipeViewAnimation) |
 | System.Linq.Dynamic.Core ParseException when using dotnet trimmer | zzzprojects/System.Linq.Dynamic.Core/issues/678 | Low | [SldcTrimmer](SldcTrimmer) |
-| Issue with Babel 10.3 and ObservableProperty | | Low | [MauiAppBabel103](MauiAppBabel103) |
 | Maui application does not restart properly after android activity is destroyed | dotnet/maui/issues/18845 | Low | [MauiAppLifecycleIssue](MauiAppLifecycleIssue) |
 | Error "Failed to inflate ColorStateList" is logged when setting Color to CheckBox | dotnet/maui/issues/18897 | Low | [MauiAppMaterialButtonAndCheckbox](MauiAppMaterialButtonAndCheckbox) | 
 | Message "MaterialButton manages its own background" is logged when setting BackgroundColor to Button | dotnet/maui/issues/18898 | Low | [MauiAppMaterialButtonAndCheckbox](MauiAppMaterialButtonAndCheckbox) |
@@ -41,6 +40,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Unable to load font 'monospace' | dotnet/maui/issues/11422 | Low | [MauiAppFontMonospace](MauiAppFontMonospace) |
 | IsPassword cannot be set dynamically for numeric keyboard | dotnet/maui/issues/12332 | Low | [MauiAppSfTextInputLayout](MauiAppSfTextInputLayout) |
 | Issue with Babel 10.x and merging of resources assemblies | | Low | [MauiAppBabel10MergeResources](MauiAppBabel10MergeResources) |
+| Issue with Babel 10.3 and ObservableProperty | | Low | [MauiAppBabel103](MauiAppBabel103) |
 | flurl.http trimmer issue in 4.0.0-pre5 | tmenier/Flurl/issues/772 | Low | [MauiAppFlurlHttpTrimmerIssue](MauiAppFlurlHttpTrimmerIssue) |
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | Firestore, exception when updating AndroidX to latest version | TobiasBuchholz/Plugin.Firebase/issues/222 | Medium | [MauiAppFirestoreExtensionAndroidxCollection](MauiAppFirestoreExtensionAndroidxCollection) |
