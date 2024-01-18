@@ -9,7 +9,6 @@ Migration from Xamarin.Forms to DotNet Maui
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | Memory leak when scrolling a CollectionView with IsGrouped=true | dotnet/maui/issues/17698 | Medium | [MauiAppCollectionViewGroupingLeak](MauiAppCollectionViewGroupingLeak) |
-| Memory leak with CarouselView | dotnet/maui/issues/17726 | Medium | [MauiAppCarouselViewLeak](MauiAppCarouselViewLeak) |
 | Memory leak with Syncfusion | https://support.syncfusion.com/en-US/support/tickets/533950 | Medium | [MauiAppSyncfusionMemoryLeak](MauiAppSyncfusionMemoryLeak) |
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | [MauiAppIconStretched](MauiAppIconStretched) |
 | Java.Lang.IllegalStateException when pushing modal page on app resume | dotnet/maui/issues/11259 <br /> dotnet/maui/issues/11501 | Low | [MauiAppExceptionOnResume](MauiAppExceptionOnResume) |
@@ -31,6 +30,9 @@ Migration from Xamarin.Forms to DotNet Maui
 | TabbedPage content becomes blank after navigating tabs | dotnet/maui/issues/7558 <br /> dotnet/maui/issues/9743 | Critical | [MauiAppTabbedPageBlank](MauiAppTabbedPageBlank) |
 | UI freeze with net8-pre5 | smstuebe/xamarin-fingerprint/issues/237 | Critical | [MauiSamplePluginFingerprint](MauiSamplePluginFingerprint) |
 | Random crash | xamarin/xamarin-android/issues/7335 | High | |
+| App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
+| Memory leak with CarouselView | dotnet/maui/issues/17726 | Medium | [MauiAppCarouselViewLeak](MauiAppCarouselViewLeak) |
+| Firestore, exception when updating AndroidX to latest version | TobiasBuchholz/Plugin.Firebase/issues/222 | Medium | [MauiAppFirestoreExtensionAndroidxCollection](MauiAppFirestoreExtensionAndroidxCollection) |
 | CollectionView virtualization does not work when using a DataTemplateSelector | dotnet/maui/issues/11272 <br /> https://github.com/xamarin/Xamarin.Forms/issues/13045 | Medium | [CollectionViewVirtualization](CollectionViewVirtualization) |
 | SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
 | UseLocalNotification is not defined for net7.0 TFM | thudugala/Plugin.LocalNotification/issues/343 | Low | [MauiAppLocalNotificationLib](MauiAppLocalNotificationLib) |
@@ -43,8 +45,6 @@ Migration from Xamarin.Forms to DotNet Maui
 | Issue with Babel 10.x and merging of resources assemblies | | Low | [MauiAppBabel10MergeResources](MauiAppBabel10MergeResources) |
 | Issue with Babel 10.3 and ObservableProperty | | Low | [MauiAppBabel103](MauiAppBabel103) |
 | flurl.http trimmer issue in 4.0.0-pre5 | tmenier/Flurl/issues/772 | Low | [MauiAppFlurlHttpTrimmerIssue](MauiAppFlurlHttpTrimmerIssue) |
-| App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
-| Firestore, exception when updating AndroidX to latest version | TobiasBuchholz/Plugin.Firebase/issues/222 | Medium | [MauiAppFirestoreExtensionAndroidxCollection](MauiAppFirestoreExtensionAndroidxCollection) |
 | Snackbar InvalidOperationException when using dotnet trimmer | CommunityToolkit/Maui/issues/1460 | Low | [MauiAppSnackbar](MauiAppSnackbar) |
 
 ### Severity
