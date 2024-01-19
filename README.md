@@ -7,6 +7,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Description | Link | Severity | Repro |
 | --- | --- | --- | --- |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
+| AndroidStripILAfterAOT causing Invalid IL code in Xunit.Assert:True | xamarin/xamarin-android/issues/8654 | High | [MauiAppXunitInvalidILCode](MauiAppXunitInvalidILCode) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | Memory leak when scrolling a CollectionView with IsGrouped=true | dotnet/maui/issues/17698 | Medium | [MauiAppCollectionViewGroupingLeak](MauiAppCollectionViewGroupingLeak) |
 | Memory leak with Syncfusion | https://support.syncfusion.com/en-US/support/tickets/533950 | Medium | [MauiAppSyncfusionMemoryLeak](MauiAppSyncfusionMemoryLeak) |
