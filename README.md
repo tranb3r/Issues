@@ -10,7 +10,6 @@ Migration from Xamarin.Forms to DotNet Maui
 | AndroidStripILAfterAOT causing Invalid IL code in Xunit.Assert:True | xamarin/xamarin-android/issues/8654 | High | [MauiAppXunitInvalidILCode](MauiAppXunitInvalidILCode) |
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | Memory leak when scrolling a CollectionView with IsGrouped=true | dotnet/maui/issues/17698 | Medium | [MauiAppCollectionViewGroupingLeak](MauiAppCollectionViewGroupingLeak) |
-| Memory leak with Syncfusion | https://support.syncfusion.com/en-US/support/tickets/533950 | Medium | [MauiAppSyncfusionMemoryLeak](MauiAppSyncfusionMemoryLeak) |
 | MauiIcon is incorrectly streched and clipped | dotnet/maui/issues/11295 <br /> dotnet/maui/issues/11159 | Low | [MauiAppIconStretched](MauiAppIconStretched) |
 | Java.Lang.IllegalStateException when pushing modal page on app resume | dotnet/maui/issues/11259 <br /> dotnet/maui/issues/11501 | Low | [MauiAppExceptionOnResume](MauiAppExceptionOnResume) |
 | (Un)SelectedTabColor do not work for TabbedPage icons (FontImageSource) on iOS | dotnet/maui/issues/12250 <br /> dotnet/maui/issues/6043 <br /> dotnet/maui/issues/6718 <br /> xamarin/Xamarin.Forms/issues/8556 | Low | [MauiAppTabbedPageIconColor](MauiAppTabbedPageIconColor) |
@@ -33,6 +32,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Random crash | xamarin/xamarin-android/issues/7335 | High | |
 | App crashes on restart (after being killed by system) when using TitleView | dotnet/maui/issues/16499 | High | [MauiAppDontKeepActivities](MauiAppDontKeepActivities) |
 | Memory leak with CarouselView | dotnet/maui/issues/17726 | Medium | [MauiAppCarouselViewLeak](MauiAppCarouselViewLeak) |
+| Memory leak with Syncfusion | https://support.syncfusion.com/en-US/support/tickets/533950 | Medium | [MauiAppSyncfusionMemoryLeak](MauiAppSyncfusionMemoryLeak) |
 | Firestore, exception when updating AndroidX to latest version | TobiasBuchholz/Plugin.Firebase/issues/222 | Medium | [MauiAppFirestoreExtensionAndroidxCollection](MauiAppFirestoreExtensionAndroidxCollection) |
 | CollectionView virtualization does not work when using a DataTemplateSelector | dotnet/maui/issues/11272 <br /> https://github.com/xamarin/Xamarin.Forms/issues/13045 | Medium | [CollectionViewVirtualization](CollectionViewVirtualization) |
 | SwipeItemView sizing is wrong | dotnet/maui/issues/10065 <br /> dotnet/maui/issues/6018 | Low | [MauiAppSwipeItemViewSizing](MauiAppSwipeItemViewSizing) |
