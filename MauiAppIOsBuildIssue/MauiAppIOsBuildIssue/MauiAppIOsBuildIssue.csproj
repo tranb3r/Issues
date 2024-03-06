@@ -44,6 +44,8 @@
 		<PackageReference Include="Plugin.Firebase.Firestore" Version="2.0.6" />
 		<PackageReference Include="Plugin.Firebase.RemoteConfig" Version="2.0.1" />
 		<PackageReference Include="Plugin.Firebase.Storage" Version="2.0.2" />
+
+		<PackageReference Include="Xamarin.Build.Download" Version="0.11.4" />
 	</ItemGroup>
 
 </Project>
