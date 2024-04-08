@@ -21,7 +21,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Maui application does not restart properly after android activity is destroyed | dotnet/maui/issues/18845 | Low | [MauiAppLifecycleIssue](MauiAppLifecycleIssue) |
 | Error "Failed to inflate ColorStateList" is logged when setting Color to CheckBox | dotnet/maui/issues/18897 | Low | [MauiAppMaterialButtonAndCheckbox](MauiAppMaterialButtonAndCheckbox) | 
 | Message "MaterialButton manages its own background" is logged when setting BackgroundColor to Button | dotnet/maui/issues/18898 | Low | [MauiAppMaterialButtonAndCheckbox](MauiAppMaterialButtonAndCheckbox) |
-| TouchBehavior regression in MCT 8.0.1 | | Low | [MauiAppMct801TouchBehavior](MauiAppMct801TouchBehavior) |
+| TouchBehavior regression in MCT 8.0.1 | CommunityToolkit/Maui/issues/1804 | Low | [MauiAppMct801TouchBehavior](MauiAppMct801TouchBehavior) |
 
 ### Fixed issues
 
