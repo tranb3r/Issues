@@ -23,6 +23,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Message "MaterialButton manages its own background" is logged when setting BackgroundColor to Button | dotnet/maui/issues/18898 | Low | [MauiAppMaterialButtonAndCheckbox](MauiAppMaterialButtonAndCheckbox) |
 | TouchBehavior regression in MCT 8.0.1 | CommunityToolkit/Maui/issues/1804 | Low | [MauiAppMct801TouchBehavior](MauiAppMct801TouchBehavior) |
 | Label is not displayed properly when adding TouchBehavior | CommunityToolkit/Maui/issues/1805 | Low | [MauiAppMctTouchBehaviorLabelTruncation](MauiAppMctTouchBehaviorLabelTruncation) |
+| Moving items in grouped CollectionView is moving the wrong items | https://github.com/dotnet/maui/issues/21698 | Low | [MauiAppCollectionViewReorder](MauiAppCollectionViewReorder)
 
 ### Fixed issues
 
