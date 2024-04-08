@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="MauiAppMctTouchBehaviorLabelTruncation.ItemView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mauiAppMctTouchBehaviorLabelTruncation="clr-namespace:MauiAppMctTouchBehaviorLabelTruncation"
+    xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Name="ItemViewRef"
+    x:DataType="mauiAppMctTouchBehaviorLabelTruncation:ItemViewModel">
+
+    <Border
+        Margin="10"
+        Padding="10"
+        BackgroundColor="LightCyan"
+        Stroke="Black">
+
+        <Border.Behaviors>
+            <mct:TouchBehavior BindingContext="{Binding BindingContext, Source={x:Reference ItemViewRef}}" Command="{Binding TapCommand}" />
+        </Border.Behaviors>
+
+        <Grid ColumnDefinitions="*,Auto">
+
+            <ContentView Grid.Column="2">
+
+                <Label
+                    BackgroundColor="LightGoldenrodYellow"
+                    Text="{Binding Title}"
+                    TextColor="Black" />
+
+            </ContentView>
+
+        </Grid>
+
+    </Border>
+
+</ContentView>
