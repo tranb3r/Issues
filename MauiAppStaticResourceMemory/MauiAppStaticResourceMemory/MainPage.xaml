@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppStaticResourceMemory.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mauiAppStaticResourceMemory="clr-namespace:MauiAppStaticResourceMemory"
+    x:DataType="mauiAppStaticResourceMemory:PageViewModel">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <Grid
+            Margin="10"
+            ColumnDefinitions="*,*"
+            Row="0">
+            <HorizontalStackLayout Grid.Column="0" Spacing="10">
+                <Label
+                    x:Name="CountLabelRef"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Button
+                    BackgroundColor="Transparent"
+                    BorderColor="Black"
+                    Clicked="ButtonDecrease_OnClicked"
+                    Text="-"
+                    TextColor="Black" />
+                <Button
+                    BackgroundColor="Transparent"
+                    BorderColor="Black"
+                    Clicked="ButtonIncrease_OnClicked"
+                    Text="+"
+                    TextColor="Black" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Grid.Column="1"
+                HorizontalOptions="End"
+                Spacing="10">
+                <Label
+                    x:Name="MemLabelRef"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Button
+                    BackgroundColor="Transparent"
+                    BorderColor="Black"
+                    Clicked="ButtonGC_OnClicked"
+                    Text="GC"
+                    TextColor="Black" />
+            </HorizontalStackLayout>
+        </Grid>
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="mauiAppStaticResourceMemory:ItemViewModel">
+                    <mauiAppStaticResourceMemory:ItemView />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>
