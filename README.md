@@ -8,6 +8,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | --- | --- | --- | --- |
 | CollectionView Header/Footer/EmptyView issues | dotnet/maui/issues/11896 | High | [MauiAppCollectionViewHeaderOrEmpty](MauiAppCollectionViewHeaderOrEmpty) |
 | AndroidStripILAfterAOT causing Invalid IL code in Xunit.Assert:True | xamarin/xamarin-android/issues/8654 | High | [MauiAppXunitInvalidILCode](MauiAppXunitInvalidILCode) |
+| BufferedFileStreamStrategy.ReadAsync throws Arg_InvalidOperationException when EnableLLVM == true | xamarin/xamarin-android/issues/8743 | Medium | [MauiAppLlvmReadAsync](MauiAppLlvmReadAsync)
 | Border margin issue | dotnet/maui/issues/11994 <br /> dotnet/maui/issues/7764 <br /> dotnet/maui/issues/7521 | Medium | [MauiAppBorderMargin](MauiAppBorderMargin) |
 | Memory leak when scrolling a CollectionView with IsGrouped=true | dotnet/maui/issues/17698 | Medium | [MauiAppCollectionViewGroupingLeak](MauiAppCollectionViewGroupingLeak) |
 | Memory usage increases when scrolling collectionview if resources count is more than 191 | dotnet/maui/issues/22053 | Medium | [MauiAppStaticResourceMemory](MauiAppStaticResourceMemory) |
@@ -24,7 +25,7 @@ Migration from Xamarin.Forms to DotNet Maui
 | Message "MaterialButton manages its own background" is logged when setting BackgroundColor to Button | dotnet/maui/issues/18898 | Low | [MauiAppMaterialButtonAndCheckbox](MauiAppMaterialButtonAndCheckbox) |
 | TouchBehavior regression in MCT 8.0.1 | CommunityToolkit/Maui/issues/1804 | Low | [MauiAppMct801TouchBehavior](MauiAppMct801TouchBehavior) |
 | Label is not displayed properly when adding TouchBehavior | CommunityToolkit/Maui/issues/1805 | Low | [MauiAppMctTouchBehaviorLabelTruncation](MauiAppMctTouchBehaviorLabelTruncation) |
-| Moving items in grouped CollectionView is moving the wrong items | https://github.com/dotnet/maui/issues/21698 | Low | [MauiAppCollectionViewReorder](MauiAppCollectionViewReorder)
+| Moving items in grouped CollectionView is moving the wrong items | dotnet/maui/issues/21698 | Low | [MauiAppCollectionViewReorder](MauiAppCollectionViewReorder)
 
 ### Fixed issues
 
