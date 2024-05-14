@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppLlvmReadAsync", "MauiAppLlvmReadAsync\MauiAppLlvmReadAsync.csproj", "{CBDA925A-BC18-4B17-B627-A65D9E74F314}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBDA925A-BC18-4B17-B627-A65D9E74F314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDA925A-BC18-4B17-B627-A65D9E74F314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDA925A-BC18-4B17-B627-A65D9E74F314}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CBDA925A-BC18-4B17-B627-A65D9E74F314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDA925A-BC18-4B17-B627-A65D9E74F314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDA925A-BC18-4B17-B627-A65D9E74F314}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57F78258-65AD-4F45-895A-817E0CA02477}
+	EndGlobalSection
+EndGlobal
