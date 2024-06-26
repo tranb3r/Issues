@@ -1,5 +1,4 @@
-﻿using HtmlAgilityPack;
-using System;
+﻿using System;
 
 namespace MauiAppSegfault
 {
@@ -14,8 +13,8 @@ namespace MauiAppSegfault
         {
             try
             {
-                var node = default(HtmlNode);
-                var link = node.GetAttributeValue("href", null);
+                var s = default(string);
+                var c = s.Length;
             }
             catch (Exception)
             {
