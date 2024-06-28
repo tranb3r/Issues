@@ -14,7 +14,11 @@ namespace MauiAppSegfault
             builder
                 .UseMauiApp<App>();
 
-            SentrySdk.Init(Dsn);
+            SentrySdk.Init(options =>
+            {
+                options.Dsn = Dsn;
+                options.Debug = true;
+            });
 
             return builder.Build();
         }
