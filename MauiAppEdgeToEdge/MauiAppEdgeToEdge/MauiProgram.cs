@@ -1,5 +1,6 @@
-﻿using AndroidX.Activity;
-using AndroidX.Fragment.App;
+﻿#if ANDROID
+using AndroidX.Activity;
+#endif
 using Microsoft.Maui.LifecycleEvents;
 using Microsoft.Maui.Platform;
 
@@ -27,18 +28,17 @@ namespace MauiAppEdgeToEdge
 								// Also wire up a fragment lifecycle callback so we can enable edge to edge on fragments
 								componentActivity.GetFragmentManager()?.RegisterFragmentLifecycleCallbacks(new MyFragmentLifecycleCallbacks((fragmentManager, fragment) =>
 								{
+									// Edge to Edge on the fragment's window
 									// Modals in MAUI in NET9 use DialogFragment
-									{
-										// Edge to Edge on the fragment's window
 									if (fragment is AndroidX.Fragment.App.DialogFragment dialogFragment)
 										dialogFragment.Dialog!.Window!.EnableEdgeToEdge(dialogFragment.Dialog!.Window!.DecorView!.Resources!);
-									}
+
 								}), false);
 							}
 						});
 					});
 #endif
-				});
+									});
 
             return builder.Build();
         }
@@ -46,9 +46,9 @@ namespace MauiAppEdgeToEdge
 }
 
 #if ANDROID
-public class MyFragmentLifecycleCallbacks(Action<FragmentManager, Fragment> onFragmentStarted) : FragmentManager.FragmentLifecycleCallbacks
+public class MyFragmentLifecycleCallbacks(Action<AndroidX.Fragment.App.FragmentManager, AndroidX.Fragment.App.Fragment> onFragmentStarted) : AndroidX.Fragment.App.FragmentManager.FragmentLifecycleCallbacks
 {
-	public override void OnFragmentStarted(FragmentManager fm, Fragment f)
+	public override void OnFragmentStarted(AndroidX.Fragment.App.FragmentManager fm, AndroidX.Fragment.App.Fragment f)
 	{
 		onFragmentStarted?.Invoke(fm, f);
 		base.OnFragmentStarted(fm, f);
