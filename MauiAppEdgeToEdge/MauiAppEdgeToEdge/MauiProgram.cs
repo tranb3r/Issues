@@ -1,5 +1,8 @@
 ﻿#if ANDROID
+using Android.OS;
 using AndroidX.Activity;
+using AndroidX.Fragment.App;
+
 #endif
 using Microsoft.Maui.LifecycleEvents;
 using Microsoft.Maui.Platform;
@@ -31,8 +34,12 @@ namespace MauiAppEdgeToEdge
 									// Modals in MAUI in NET9 use DialogFragment
 									if (fragment is AndroidX.Fragment.App.DialogFragment dialogFragment && dialogFragment.Activity is not null)
 									{
-										// Edge to Edge on the fragment's activity too
-										EdgeToEdge.Enable(dialogFragment.Activity);
+										dialogFragment.Dialog?.Window?.EnableEdgeToEdge(dialogFragment.Dialog.Window.DecorView!.Resources!);
+
+										// These don't seem to work, perhaps it's not getting the correct activity still
+										// if (dialogFragment.Dialog.OwnerActivity is ComponentActivity dfComponentActivity)
+										//	EdgeToEdge.Enable(dfComponentActivity);
+										//EdgeToEdge.Enable(dialogFragment.Activity);
 									}
 
 								}), false);
