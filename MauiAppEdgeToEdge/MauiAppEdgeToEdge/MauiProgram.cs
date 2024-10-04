@@ -28,10 +28,12 @@ namespace MauiAppEdgeToEdge
 								// Also wire up a fragment lifecycle callback so we can enable edge to edge on fragments
 								componentActivity.GetFragmentManager()?.RegisterFragmentLifecycleCallbacks(new MyFragmentLifecycleCallbacks((fragmentManager, fragment) =>
 								{
-									// Edge to Edge on the fragment's window
 									// Modals in MAUI in NET9 use DialogFragment
-									if (fragment is AndroidX.Fragment.App.DialogFragment dialogFragment)
-										dialogFragment.Dialog!.Window!.EnableEdgeToEdge(dialogFragment.Dialog!.Window!.DecorView!.Resources!);
+									if (fragment is AndroidX.Fragment.App.DialogFragment dialogFragment && dialogFragment.Activity is not null)
+									{
+										// Edge to Edge on the fragment's activity too
+										EdgeToEdge.Enable(dialogFragment.Activity);
+									}
 
 								}), false);
 							}
