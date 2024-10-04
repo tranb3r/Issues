@@ -28,9 +28,9 @@ namespace MauiAppEdgeToEdge
 								componentActivity.GetFragmentManager()?.RegisterFragmentLifecycleCallbacks(new MyFragmentLifecycleCallbacks((fragmentManager, fragment) =>
 								{
 									// Modals in MAUI in NET9 use DialogFragment
-									if (fragment is DialogFragment dialogFragment)
 									{
 										// Edge to Edge on the fragment's window
+									if (fragment is AndroidX.Fragment.App.DialogFragment dialogFragment)
 										dialogFragment.Dialog!.Window!.EnableEdgeToEdge(dialogFragment.Dialog!.Window!.DecorView!.Resources!);
 									}
 								}), false);

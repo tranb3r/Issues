@@ -24,7 +24,6 @@ internal static class ActivityExtensions
 			SystemBarStyle.Auto(global::Android.Graphics.Color.Transparent, global::Android.Graphics.Color.Transparent),
 			SystemBarStyle.Auto(DefaultLightScrim, DefaultDarkScrim));
 
-
 	public static void EnableEdgeToEdge(this global::Android.Views.Window window, global::Android.Content.Res.Resources resources, SystemBarStyle statusBarStyle, SystemBarStyle navigationBarStyle)
 	{
 		var res = resources;
