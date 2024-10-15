@@ -214,7 +214,7 @@ internal class EdgeToEdgeApi29 : EdgeToEdgeApi28
 		if (OperatingSystem.IsAndroidVersionAtLeast(29))
 		{
 			WindowCompat.SetDecorFitsSystemWindows(window, false);
-			window.SetStatusBarColor(statusBarStyle.GetScrimWithEnforcedContrast(navigationBarIsDark));
+			window.SetStatusBarColor(statusBarStyle.GetScrimWithEnforcedContrast(statusBarIsDark));
 			window.SetNavigationBarColor(navigationBarStyle.GetScrimWithEnforcedContrast(navigationBarIsDark));
 			window.StatusBarContrastEnforced = false;
 			window.NavigationBarContrastEnforced = navigationBarStyle.NightMode == UiMode.NightUndefined;
