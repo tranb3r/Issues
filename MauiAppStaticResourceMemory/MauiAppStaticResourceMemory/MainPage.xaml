@@ -49,11 +49,10 @@
 
         <CollectionView Grid.Row="1" ItemsSource="{Binding Items}">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="mauiAppStaticResourceMemory:ItemViewModel">
-                    <mauiAppStaticResourceMemory:ItemView />
+                <DataTemplate>
+                    <Label Text="Hello world" />
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-
         </CollectionView>
 
     </Grid>

@@ -4,14 +4,14 @@ namespace MauiAppStaticResourceMemory
 {
     internal class PageViewModel
     {
-        public ObservableCollection<ItemViewModel> Items { get; }
+        public ObservableCollection<string> Items { get; }
 
         public PageViewModel()
         {
             Items = [];
-            for (var i = 0; i < 50; ++i)
+            for (var i = 0; i < 200; ++i)
             {
-                Items.Add(new ItemViewModel($"Item {i}"));
+                Items.Add($"Item {i}");
             }
         }
     }
