@@ -14,15 +14,20 @@
         BackgroundColor="LightCyan"
         Stroke="Black">
 
-        <!--  8.0.1  -->
-        <Border.Behaviors>
-            <mct:TouchBehavior Command="{Binding TapCommand}" />
-        </Border.Behaviors>
-
-        <!--  8.0.0  -->
+        <!--  8.0.0 : OK  -->
         <!--<Border.Behaviors>
             <mct:TouchBehavior BindingContext="{Binding BindingContext, Source={x:Reference ItemViewRef}}" Command="{Binding TapCommand}" />
         </Border.Behaviors>-->
+
+        <!--  8.0.1 : KO  -->
+        <!--<Border.Behaviors>
+            <mct:TouchBehavior Command="{Binding TapCommand}" />
+        </Border.Behaviors>-->
+
+        <!--  10.0.0 : OK  -->
+        <Border.Behaviors>
+            <mct:TouchBehavior BindingContext="{Binding BindingContext, Source={x:Reference ItemViewRef}}" Command="{Binding TapCommand}" />
+        </Border.Behaviors>
 
         <Label Text="{Binding Title}" TextColor="Black" />
 
