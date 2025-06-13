@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Microsoft.Maui.Storage;
+using System;
 using System.IO;
 using System.Text;
-using Microsoft.Maui.Storage;
 
 namespace MauiAppLlvmReadAsync
 {
@@ -32,15 +32,19 @@ namespace MauiAppLlvmReadAsync
             {
                 await using var sourceStream = File.Open(_fileSrc, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                 var result = new byte[sourceStream.Length];
-                await sourceStream.ReadAsync(result, 0, (int)sourceStream.Length);
+
+                await sourceStream.ReadAsync(result, 0, result.Length); // KO
+                //await sourceStream.ReadExactlyAsync(result); // CA2022 OK
+                //await sourceStream.ReadAsync(result.AsMemory(0, result.Length)); // CA1835 OK
+
                 var content = Encoding.ASCII.GetString(result);
 
-                await DisplayAlert("Success", $"{content}{Environment.NewLine}File read successfully", "OK");
+                await DisplayAlertAsync("Success", $"{content}{Environment.NewLine}File read successfully", "OK");
             }
             catch (Exception exception)
             {
                 Console.WriteLine(exception.ToString());
-                await DisplayAlert("Error", exception.ToString(), "OK");
+                await DisplayAlertAsync("Error", exception.ToString(), "OK");
             }
         }
     }
