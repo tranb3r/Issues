@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppTestXamlSG.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mauiAppTestXamlSg="clr-namespace:MauiAppTestXamlSG">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MyLabelStyle" TargetType="mauiAppTestXamlSg:MyLabel">
+                <Setter Property="MyProperty" Value="Bar" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        Spacing="10"
+        VerticalOptions="Center">
+
+        <mauiAppTestXamlSg:MyLabel Text="Hello, World!" />
+        <mauiAppTestXamlSg:MyLabel MyProperty="Foo" Text="Hello, World!" />
+        <mauiAppTestXamlSg:MyLabel Style="{StaticResource MyLabelStyle}" Text="Hello, World!" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
