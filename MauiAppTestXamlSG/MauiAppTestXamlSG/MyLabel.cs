@@ -1,4 +1,5 @@
 ﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
 using SQuan.Helpers.Maui.Mvvm;
 
 namespace MauiAppTestXamlSG
@@ -7,5 +8,8 @@ namespace MauiAppTestXamlSG
     {
         [BindableProperty]
         public partial string MyProperty { get; set; }
+
+        [BindableProperty]
+        public partial Color MyColor { get; set; }
     }
 }

@@ -21,7 +21,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.20" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.40-ci.inflight.26071.9" />
 		<PackageReference Include="SQuan.Helpers.Maui.Mvvm" Version="10.0.10" />
 	</ItemGroup>
 
