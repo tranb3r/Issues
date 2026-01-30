@@ -1,6 +1,6 @@
-﻿using Microsoft.Maui.Controls;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Graphics;
-using SQuan.Helpers.Maui.Mvvm;
 
 namespace MauiAppTestXamlSG
 {

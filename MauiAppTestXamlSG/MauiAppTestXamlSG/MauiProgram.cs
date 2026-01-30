@@ -1,4 +1,5 @@
-﻿using Microsoft.Maui.Controls.Hosting;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
 
 namespace MauiAppTestXamlSG
@@ -9,7 +10,8 @@ namespace MauiAppTestXamlSG
         {
             var builder = MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>();
+                .UseMauiApp<App>()
+                .UseMauiCommunityToolkit();
 
             return builder.Build();
         }
