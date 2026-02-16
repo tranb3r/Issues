@@ -27,7 +27,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="14.0.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.40-ci.inflight.26079.6" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.40-ci.main.26111.16" />
 	</ItemGroup>
 
 </Project>

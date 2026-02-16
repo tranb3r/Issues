@@ -7,6 +7,7 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
+            <Color x:Key="TestColor">Red</Color>
             <Style x:Key="MyLabelStyle" TargetType="mauiAppTestXamlSg:MyLabel">
                 <Setter Property="MyProperty" Value="Bar" />
                 <Setter Property="MyColor" Value="{StaticResource TestColor}" />
