@@ -11,9 +11,9 @@
 
     <Button Command="{Binding AddCommand, Mode=OneTime}" Text="Add" />
 
-    <Label Text="{Binding View1Count, Source={x:Static models:Counters.Instance}, StringFormat='View1:{0}', Mode=OneWay}" VerticalOptions="Center" />
+    <Label Text="{Binding View1Count, Source={x:Static models:Counters.Instance}, StringFormat='View1:{0}', x:DataType=models:Counters, Mode=OneWay}" VerticalOptions="Center" />
 
-    <Label Text="{Binding View2Count, Source={x:Static models:Counters.Instance}, StringFormat='View2:{0}', Mode=OneWay}" VerticalOptions="Center" />
+    <Label Text="{Binding View2Count, Source={x:Static models:Counters.Instance}, StringFormat='View2:{0}', x:DataType=models:Counters, x:DaMode=OneWay}" VerticalOptions="Center" />
 
     <Label
         x:Name="MemLabelRef"
