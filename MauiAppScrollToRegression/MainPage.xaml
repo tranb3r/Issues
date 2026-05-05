@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppScrollToRegression.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <HorizontalStackLayout
+            Grid.Row="0"
+            Padding="8"
+            Spacing="8">
+            <Button Clicked="OnScrollToStart" Text="Start" />
+            <Button Clicked="OnScrollToFirstItem" Text="First item" />
+            <Button Clicked="OnScrollToLastItem" Text="Last item" />
+            <Button Clicked="OnScrollToEnd" Text="End" />
+        </HorizontalStackLayout>
+
+        <CollectionView
+            x:Name="MyCollectionView"
+            Grid.Row="1"
+            IsGrouped="True">
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Label
+                        Padding="8,4"
+                        BackgroundColor="LightGray"
+                        FontAttributes="Bold"
+                        Text="{Binding Key}" />
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Padding="16,8" Text="{Binding Name}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>
