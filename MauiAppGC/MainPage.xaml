@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppGC.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppGC"
+    x:DataType="local:MainPage">
+    <ContentPage.Resources>
+        <local:IndexToBrushConverter x:Key="IndexToBrush" />
+    </ContentPage.Resources>
+    <Grid RowDefinitions="Auto,Auto,*">
+        <HorizontalStackLayout
+            Grid.Row="0"
+            Padding="16,10"
+            Spacing="16">
+            <Label x:Name="Gen0Label" Text="Gen0: 0" />
+            <Label x:Name="Gen1Label" Text="Gen1: 0" />
+            <Label x:Name="Gen2Label" Text="Gen2: 0" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            Grid.Row="1"
+            Padding="16,10"
+            Spacing="16">
+            <Button Clicked="OnReset" Text="Reset" />
+            <Button Clicked="OnScrollToStart" Text="Start" />
+            <Button Clicked="OnScrollToEnd" Text="End" />
+        </HorizontalStackLayout>
+        <CollectionView
+            x:Name="Cv"
+            Grid.Row="2"
+            ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:HeavyItem">
+                    <Border
+                        Margin="8,4"
+                        Padding="0"
+                        Stroke="#E0E0E0"
+                        StrokeThickness="1">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10" />
+                        </Border.StrokeShape>
+                        <Border.Shadow>
+                            <Shadow
+                                Brush="Black"
+                                Offset="2,2"
+                                Opacity="0.15"
+                                Radius="6" />
+                        </Border.Shadow>
+                        <Grid ColumnDefinitions="56,*" Padding="8" RowDefinitions="Auto,Auto">
+                            <Border
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Background="{Binding Index, Converter={StaticResource IndexToBrush}}"
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                WidthRequest="40">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Label
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Center"
+                                    Text="{Binding Initial}"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                            </Border>
+                            <VerticalStackLayout
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                Padding="8,0,0,0"
+                                Spacing="2">
+                                <Label FontAttributes="Bold" FontSize="14" Text="{Binding Label}" />
+                                <Label FontSize="12" Text="{Binding Subtitle}" TextColor="Gray" />
+                                <Label
+                                    FontSize="11"
+                                    Text="{Binding Tag}"
+                                    TextColor="{Binding Index, Converter={StaticResource IndexToBrush}}" />
+                                <Label FontSize="11" Text="{Binding Score}" TextColor="DarkSlateGray" />
+                            </VerticalStackLayout>
+                            <VerticalStackLayout
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                Padding="0,6,0,2"
+                                Spacing="6">
+                                <ProgressBar
+                                    Progress="{Binding Progress}"
+                                    ProgressColor="{Binding ChipIndex1, Converter={StaticResource IndexToBrush}}" />
+                                <HorizontalStackLayout Spacing="6">
+                                    <Border
+                                        Background="{Binding ChipIndex1, Converter={StaticResource IndexToBrush}}"
+                                        Padding="8,3">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="6" />
+                                        </Border.StrokeShape>
+                                        <Label FontSize="10" Text="{Binding Chip1}" TextColor="White" />
+                                    </Border>
+                                    <Border
+                                        Background="{Binding ChipIndex2, Converter={StaticResource IndexToBrush}}"
+                                        Padding="8,3">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="6" />
+                                        </Border.StrokeShape>
+                                        <Label FontSize="10" Text="{Binding Chip2}" TextColor="White" />
+                                    </Border>
+                                    <Border
+                                        Background="{Binding ChipIndex3, Converter={StaticResource IndexToBrush}}"
+                                        Padding="8,3">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="6" />
+                                        </Border.StrokeShape>
+                                        <Label FontSize="10" Text="{Binding Chip3}" TextColor="White" />
+                                    </Border>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroupList>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#EDE7F6" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateGroupList>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
