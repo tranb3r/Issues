@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppCollectionViewEmptyView.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:MauiAppCollectionViewEmptyView.Models"
+    xmlns:vm="clr-namespace:MauiAppCollectionViewEmptyView.ViewModels"
+    x:Name="Page"
+    x:DataType="vm:MainViewModel">
+
+    <Grid Padding="20,50,20,0" RowDefinitions="Auto,*">
+
+        <Grid
+            Grid.Row="0"
+            Margin="0,0,0,10"
+            ColumnDefinitions="Auto,Auto"
+            ColumnSpacing="10">
+
+            <Button
+                Grid.Column="0"
+                Command="{Binding AddGroupCommand}"
+                Text="+ Group" />
+
+            <Button
+                Grid.Column="1"
+                Command="{Binding RemoveGroupCommand}"
+                Text="- Group" />
+        </Grid>
+
+        <CollectionView
+            Grid.Row="1"
+            IsGrouped="True"
+            ItemsSource="{Binding Groups}">
+
+            <CollectionView.EmptyView>
+                <VerticalStackLayout Padding="20" Spacing="10">
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="EMPTY VIEW" />
+                    <Label
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="No groups to display." />
+                </VerticalStackLayout>
+            </CollectionView.EmptyView>
+
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="models:ItemGroup">
+                    <Grid
+                        Padding="10"
+                        BackgroundColor="LightGray"
+                        ColumnDefinitions="*,Auto,Auto"
+                        ColumnSpacing="10">
+
+                        <Label
+                            FontAttributes="Bold"
+                            Text="{Binding Title}"
+                            VerticalOptions="Center" />
+
+                        <Button
+                            Grid.Column="1"
+                            Command="{Binding BindingContext.AddItemCommand, Source={x:Reference Page}}"
+                            CommandParameter="{Binding .}"
+                            Text="+ Item" />
+
+                        <Button
+                            Grid.Column="2"
+                            Command="{Binding BindingContext.RemoveItemCommand, Source={x:Reference Page}}"
+                            CommandParameter="{Binding .}"
+                            Text="- Item" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+
+            <CollectionView.GroupFooterTemplate>
+                <DataTemplate x:DataType="models:ItemGroup">
+                    <Label
+                        Padding="10,0,10,10"
+                        FontAttributes="Italic"
+                        FontSize="12"
+                        Text="{Binding FooterText}"
+                        TextColor="Gray" />
+                </DataTemplate>
+            </CollectionView.GroupFooterTemplate>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="x:String">
+                    <Label Padding="20,10" Text="{Binding .}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>
