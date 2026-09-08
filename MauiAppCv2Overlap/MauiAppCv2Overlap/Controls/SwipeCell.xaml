@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="MauiAppCv2Overlap.Controls.SwipeCell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!-- Small Threshold so Mode="Execute" fires on a short swipe (same trick as OuiBank's SwipeViewBase).
+         The revealed action intentionally does nothing: the overlap reproduces from the swipe itself. -->
+    <SwipeView Threshold="60">
+        <SwipeView.RightItems>
+            <SwipeItems Mode="Execute" SwipeBehaviorOnInvoked="Close">
+                <SwipeItemView BackgroundColor="#2E7D32">
+                    <Label Text="read" TextColor="White" FontAttributes="Bold"
+                           Padding="24,0" VerticalOptions="Center" />
+                </SwipeItemView>
+            </SwipeItems>
+        </SwipeView.RightItems>
+        <Border Stroke="#90A4AE" StrokeThickness="1" BackgroundColor="White"
+                HeightRequest="64" Margin="6" Padding="12">
+            <Label Text="{Binding Text}" VerticalOptions="Center" />
+        </Border>
+    </SwipeView>
+</ContentView>

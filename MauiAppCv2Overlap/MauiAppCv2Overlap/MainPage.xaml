@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppCv2Overlap.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:MauiAppCv2Overlap.Controls"
+    xmlns:local="clr-namespace:MauiAppCv2Overlap">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <!--  Group A cell: single line, same fixed height (64) as Group B.  -->
+            <DataTemplate x:Key="GroupATemplate">
+                <Border
+                    Margin="6"
+                    Padding="12"
+                    BackgroundColor="#E1F5FE"
+                    HeightRequest="64"
+                    Stroke="#90A4AE"
+                    StrokeThickness="1">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="17"
+                        Text="{Binding Text}"
+                        VerticalOptions="Center" />
+                </Border>
+            </DataTemplate>
+
+            <!--
+                Group B cell: SwipeView execute action that does nothing. On iOS CV2 the overlap
+                reproduces from the swipe itself, with no item removal and no data change.
+            -->
+            <DataTemplate x:Key="GroupBTemplate">
+                <controls:SwipeCell />
+            </DataTemplate>
+
+            <local:ItemTemplateSelector
+                x:Key="Selector"
+                GroupATemplate="{StaticResource GroupATemplate}"
+                GroupBTemplate="{StaticResource GroupBTemplate}" />
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <CollectionView
+        x:Name="Cv"
+        IsGrouped="True"
+        ItemTemplate="{StaticResource Selector}"
+        ItemsSource="{Binding Groups}"
+        SelectionMode="None">
+        <CollectionView.GroupHeaderTemplate>
+            <DataTemplate>
+                <Label
+                    Padding="14,10,14,4"
+                    BackgroundColor="#EEEEEE"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    Text="{Binding Name}" />
+            </DataTemplate>
+        </CollectionView.GroupHeaderTemplate>
+    </CollectionView>
+
+</ContentPage>
