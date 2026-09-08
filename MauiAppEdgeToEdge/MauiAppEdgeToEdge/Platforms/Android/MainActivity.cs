@@ -3,21 +3,25 @@ using Android.Content.PM;
 using Android.OS;
 using AndroidX.Activity;
 using AndroidX.Core.View;
+using AndroidX.Fragment.App;
+using Google.Android.Material.AppBar;
 
 namespace MauiAppEdgeToEdge
 {
     [Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
     public class MainActivity : MauiAppCompatActivity
     {
-        protected override void OnCreate(Bundle? savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
+		//protected override void OnCreate(Bundle? savedInstanceState)
+		//{
+		//	base.OnCreate(savedInstanceState);
 
-            EdgeToEdge.Enable(this);
+		//	var appBarLayout = FindViewById<AppBarLayout>(Resource.Id.navigationlayout_appbar);
 
-            //WindowCompat.SetDecorFitsSystemWindows(Window, false);
-            //Window.SetStatusBarColor(global::Android.Graphics.Color.Transparent);
-            //Window.SetNavigationBarColor(global::Android.Graphics.Color.Transparent);
-        }
-    }
+		//	appBarLayout?.SetFitsSystemWindows(true);
+
+		//	var contentLayout = FindViewById<FragmentContainerView>(Resource.Id.navigationlayout_content);
+
+		//	contentLayout?.SetFitsSystemWindows(true);
+		//}
+	}
 }
